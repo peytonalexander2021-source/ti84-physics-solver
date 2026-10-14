@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://peytonalexander2021-source.github.io/ti84-physics-solver/sitemap.xml
