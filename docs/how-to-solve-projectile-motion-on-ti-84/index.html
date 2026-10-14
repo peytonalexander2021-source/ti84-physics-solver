@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Solve Projectile Motion on a TI-84 Plus CE</title><meta name="description" content="Step-by-step: solve a horizontal projectile problem (time, distance, final speed) on a TI-84 Plus CE, with the formulas and a worked example.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/how-to-solve-projectile-motion-on-ti-84/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>How to solve projectile motion on a TI-84 Plus CE</h1><p class='lede'>Worked example: a plane flying level at 150 km/h drops a package from 500 m. How long does it fall, how far forward does it land, and how fast is it going at impact?</p></header><section style='display:grid;gap:10px'><h2>The formulas</h2><p>Sideways speed stays the same: <b>Δx = v₀ₓt</b>. Up and down is free fall with a = −9.8 m/s²: <b>Δy = v₀ᵧt − ½gt²</b>, <b>vᵧ = v₀ᵧ − gt</b>. Final speed: <b>v = √(v₀ₓ² + vᵧ²)</b>.</p><h2>By hand</h2><p>Dropped level, so v₀ᵧ = 0 and Δy = −500 m. Fall time: t = √(2 × 500 / 9.8) = <b>10.1 s</b>. Speed sideways: 150 km/h ÷ 3.6 = 41.67 m/s, so Δx = 41.67 × 10.10 = <b>421 m</b>. Then vᵧ = −9.8 × 10.10 = −99.0 m/s and v = √(41.67² + 99.0²) = <b>107 m/s</b>.</p><h2>On the calculator with PHYSPRO</h2><p>Open <i>Motion &amp; projectiles → Fill in: projectile</i>, type only what the problem gives (Δy = −500, v₀ₓ = 150/3.6, v₀ᵧ = 0) and press GRAPH. It finds all 8 unknowns and shows the work for each.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px"><figure style="margin:0;display:grid;gap:6px"><img src="../img/proj_pages.png" width="330" height="250" alt="PHYSPRO motion topic with fill-in pages" style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line)"><figcaption style="font-size:14px;color:var(--muted)">1. Pick the fill-in page</figcaption></figure><figure style="margin:0;display:grid;gap:6px"><img src="../img/fillin.png" width="330" height="250" alt="Typing the givens" style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line)"><figcaption style="font-size:14px;color:var(--muted)">2. Type what the problem gives</figcaption></figure><figure style="margin:0;display:grid;gap:6px"><img src="../img/answers.png" width="330" height="250" alt="Eight answers with sig figs" style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line)"><figcaption style="font-size:14px;color:var(--muted)">3. Every unknown, with sig figs</figcaption></figure><figure style="margin:0;display:grid;gap:6px"><img src="../img/work.png" width="330" height="250" alt="Work shown for delta x" style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line)"><figcaption style="font-size:14px;color:var(--muted)">4. The work for any answer</figcaption></figure></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>
