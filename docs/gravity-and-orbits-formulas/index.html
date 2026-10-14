@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gravity and orbits Formulas: Physics I Cheat Sheet</title><meta name="description" content="Gravity and orbits formulas for Physics I with units and when to use each: F = Gm₁m₂ / r², g = GM / r², v = √(GM / r), and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/gravity-and-orbits-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Gravity and orbits formulas</h1><p class='lede'>Every gravity and orbits formula you need for Physics I (9 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">F = Gm₁m₂ / r²</div><div class="vars"><span><b>F</b> gravity force (N)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>m₁</b> mass 1 (kg)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>r</b> center-to-center (m)</span></div><p class="tip">Pull between any two masses. r = center to center.
+Weight at a height h: m₁ = planet mass (Earth 5.97E24), m₂ = object, r = 6.37E6+h.
+Touching balls: r = radius 1 + radius 2.
+Two pulls on one mass: find each F, then add (same way) or subtract (opposite ways).
+2× the distance → 1/4 the force.
+Moon 7.35E22 kg, Sun 1.99E30 kg.
+Earth to Moon 3.84E8 m, Earth to Sun 1.50E11 m.</p></div><div class="f"><div class="eq">g = GM / r²</div><div class="vars"><span><b>g</b> gravity accel. (m/s²)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>r</b> center dist (r+h) (m)</span></div><p class="tip">Free-fall acceleration at distance r from a planet&#x27;s center.
+On the surface: r = planet radius (Earth 6.37E6).
+At a height h: r = 6.37E6+h.
+Find the height: solve r, then height = r − 6.37E6.
+Other planet: clear M, type its mass.
+Find a planet&#x27;s mass: clear M (CLEAR), type g and r, solve M.
+Where 2 pulls cancel (d apart): x = d/(1+√(m₂/m₁)) from m₁. Earth-Moon: 3.46E8 m.
+Weight = m×g.</p></div><div class="f"><div class="eq">v = √(GM / r)</div><div class="vars"><span><b>v</b> orbit speed (m/s)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>r</b> orbit radius (r+h) (m)</span></div><p class="tip">Speed of a satellite or moon in a circle orbit.
+r = planet center to satellite: 6.37E6+height.
+The satellite&#x27;s mass does not matter.
+Around the Sun: M = 1.99E30. Around the Moon: M = 7.35E22.
+Find a planet&#x27;s or star&#x27;s mass from a moon&#x27;s speed and r: clear M (CLEAR), solve M.
+Orbit KE = ½mv².</p></div><div class="f"><div class="eq">T² = 4π²r³ / GM</div><div class="vars"><span><b>T</b> orbit period (s)</span><span><b>r</b> radius/semi-major (m)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span></div><p class="tip">Time for one full orbit (Kepler&#x27;s 3rd law).
+T in seconds: hours×3600, days×86400, years×3.156E7.
+Stays over one spot: T = 24×3600. Height = r − 6.37E6.
+Oval orbit: r = (closest + farthest)/2. Farthest = 2r − closest.
+Sun: M = 1.99E30.
+Find a star&#x27;s or planet&#x27;s mass from its moon: clear M (CLEAR), solve M.
+Two planets, same star, no mass given: clear M, solve M from planet 1, use it for planet 2.</p></div><div class="f"><div class="eq">vₑ = √(2GM / R)</div><div class="vars"><span><b>vₑ</b> escape speed (m/s)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>R</b> start from center (m)</span></div><p class="tip">Slowest launch speed that never falls back (no air, no engine).
+From the surface: R = planet radius (Earth&#x27;s is filled in).
+From an orbit or height: R = 6.37E6+height.
+The object&#x27;s mass does not matter.
+Other body: Moon 7.35E22 kg, 1.74E6 m. Sun 1.99E30 kg, 6.96E8 m.
+Black hole size: type its M, vₑ = 3E8 (light), clear R (CLEAR), solve R.</p></div><div class="f"><div class="eq">U = −GMm / r</div><div class="vars"><span><b>U</b> potential energy (J)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>m</b> object mass (kg)</span><span><b>r</b> center dist (r+h) (m)</span></div><p class="tip">Gravity potential energy. Always negative; 0 when very far away.
+r = from the planet center: 6.37E6+height.
+Work to lift from r₁ to r₂: U₂ − U₁ (solve twice, subtract).
+Use this, not mgh, when the height is big (like 100 km+).
+Total energy of an orbit: use E = −GMm / 2r.
+Launch or falling speeds: use the ½v₁² − GM/r₁ formula.</p></div><div class="f"><div class="eq">E = −GMm / 2r</div><div class="vars"><span><b>E</b> total orbit energy (J)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>m</b> object mass (kg)</span><span><b>r</b> orbit radius (r+h) (m)</span></div><p class="tip">Total energy (KE + U) of a circle orbit. Always negative.
+Orbit KE = the same number made positive. Orbit U = 2×E.
+Energy to move up to a higher orbit: E₂ − E₁ (solve twice, subtract).
+Energy to put it in orbit from the ground: E − U, with U from U = −GMm / r using r = 6.37E6.</p></div><div class="f"><div class="eq">½v₁² − GM/r₁ = ½v₂² − GM/r₂</div><div class="vars"><span><b>v₁</b> start speed (m/s)</span><span><b>r₁</b> start dist (r+h) (m)</span><span><b>v₂</b> end speed (m/s)</span><span><b>r₂</b> end dist (r+h) (m)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span></div><p class="tip">Speed at one distance → speed at another (no air, no engine). Mass cancels.
+Every r is from the planet center: 6.37E6+height.
+Shot up, how high: v₂ = 0, solve r₂, then height = r₂ − 6.37E6.
+Falls from rest: v₁ = 0.
+Very far away: type 10^30 for that r.
+Escape speed: use vₑ = √(2GM / R).
+Comet&#x27;s closest and farthest points: use v₁r₁ = v₂r₂.</p></div><div class="f"><div class="eq">v₁r₁ = v₂r₂</div><div class="vars"><span><b>v₁</b> speed at closest (m/s)</span><span><b>r₁</b> closest distance (m)</span><span><b>v₂</b> speed at farthest (m/s)</span><span><b>r₂</b> farthest distance (m)</span></div><p class="tip">Kepler&#x27;s 2nd law: closer = faster.
+Only at an oval orbit&#x27;s closest point and farthest point.
+r = distance from the Sun&#x27;s (or planet&#x27;s) center.
+No masses needed.
+Units cancel: both r in AU, or both speeds in km/s, works too.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

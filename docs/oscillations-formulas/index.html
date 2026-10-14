@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oscillations Formulas: Physics I Cheat Sheet</title><meta name="description" content="Oscillations formulas for Physics I with units and when to use each: T = 2π√(m / k), T = 2π√(L / g), f = 1 / T, and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/oscillations-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Oscillations formulas</h1><p class='lede'>Every oscillations formula you need for Physics I (11 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">T = 2π√(m / k)</div><div class="vars"><span><b>T</b> period (s)</span><span><b>m</b> mass (kg)</span><span><b>k</b> spring constant (N/m)</span></div><p class="tip">Mass bouncing on a spring (sideways or hanging).
+Know f? Type 1/f as T. Know ω? Type 2π/ω as T.
+Need ω? For a spring ω = √(k/m): type it right in any ω box, e.g. √(200/0.5).
+Only told how far a hanging mass stretched it? Get k from mg = kΔy first.
+Mass added to change T? Solve m for each T and subtract.
+Twisting (torsion) pendulum: type I as m and the torsion constant as k.</p></div><div class="f"><div class="eq">T = 2π√(L / g)</div><div class="vars"><span><b>T</b> period (s)</span><span><b>L</b> pendulum length (m)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Ball on a string, small swings. The mass does not matter.
+Find g (other planet): press CLEAR on the g box (9.8) and leave it empty.
+Swinging rod, pivot at one end: type 2/3 of the rod length as L.
+Any swinging object: type I/(m*d) as L (d = pivot to center of mass).
+Hanging spring that stretched Δy: type Δy as L.
+Pendulum ω = √(g/L).</p></div><div class="f"><div class="eq">f = 1 / T</div><div class="vars"><span><b>f</b> frequency (Hz)</span><span><b>T</b> period (s)</span></div><p class="tip">Period T = seconds for 1 full back-and-forth.
+Frequency f = back-and-forths per second (Hz).
+Counted N cycles in t seconds? Type t/N as T, e.g. 20/10.
+End to middle takes T/4; end to end takes T/2. Type 4t or 2t as T.
+Know ω? Type ω/(2π) as f to get T.</p></div><div class="f"><div class="eq">ω = 2πf</div><div class="vars"><span><b>ω</b> angular frequency (rad/s)</span><span><b>f</b> frequency (Hz)</span></div><p class="tip">ω (rad/s) is what goes in x = A cos(ωt + φ) and the speed formulas. ω is not f.
+Know T? Type 1/T as f, e.g. 1/0.5.
+Spring: ω = √(k/m). Pendulum: ω = √(g/L). Type these right in the ω box, e.g. √(200/0.5), to get f.</p></div><div class="f"><div class="eq">mg = kΔy</div><div class="vars"><span><b>m</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>k</b> spring constant (N/m)</span><span><b>Δy</b> stretch at rest (m)</span></div><p class="tip">Mass hanging still on a spring: Δy = how far it stretched from its natural length.
+Use it to find k, then the period.
+Pulled down more and let go? That extra pull is the amplitude A, not Δy.
+Spring force at a stretch x: F = kx (Work &amp; energy). Max force = kA.
+No mass given? Period = 2π√(Δy/g): use T = 2π√(L/g) with Δy as L.</p></div><div class="f"><div class="eq">x = A cos(ωt + φ)</div><div class="vars"><span><b>x</b> position (m)</span><span><b>A</b> amplitude (m)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>t</b> time (s)</span><span><b>φ</b> phase shift (rad)</span></div><p class="tip">Position at time t. Angles here are RADIANS (π = 180°).
+φ: pulled to +A and let go → 0. At the middle moving + → −π/2. At −A → π.
+Given x = A sin(ωt)? Use φ = −π/2.
+Given x = 0.25 cos(0.4πt)? A = 0.25, ω = 0.4π, φ = 0.
+t answer = first time it is at x; the 2nd answer is the next time.
+Starts at x₀ moving at v₀? Get A from v = ω√(A² − x²), then t = 0, leave φ empty: pick the φ with the opposite sign to v₀.</p></div><div class="f"><div class="eq">v = ω√(A² − x²)</div><div class="vars"><span><b>v</b> speed (m/s)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>A</b> amplitude (m)</span><span><b>x</b> position (m)</span></div><p class="tip">Speed at a spot x (x measured from the middle).
+Max speed (at the middle): type 0 as x. That is vₘₐₓ = Aω.
+Amplitude from a speed at a spot: leave A empty.
+ω: type √(k/m) for a spring, 2π/T, or 2πf.
+Speed is 0 at the ends (x = A).</p></div><div class="f"><div class="eq">a = −ω²x</div><div class="vars"><span><b>a</b> acceleration (m/s²)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>x</b> position (m)</span></div><p class="tip">Acceleration at a spot x. It always points back to the middle (opposite sign to x).
+Max acceleration aₘₐₓ = Aω²: type A as x and drop the minus sign.
+Know aₘₐₓ and A? Type them as a and x, leave ω empty.
+At a time t: find x first with x = A cos(ωt + φ).
+Spring: type √(k/m) as ω.</p></div><div class="f"><div class="eq">E = ½kA²</div><div class="vars"><span><b>E</b> total energy (J)</span><span><b>k</b> spring constant (N/m)</span><span><b>A</b> amplitude (m)</span></div><p class="tip">Total energy. It stays the same the whole time.
+Spring energy at a spot x: type x as A. Then kinetic energy = E − that.
+Kinetic energy ½mv²: type m in the k box and v in the A box.
+Max speed from E: type m as k and leave A empty (answer is vₘₐₓ).
+No k? Type m*ω² as k.</p></div><div class="f"><div class="eq">v = −vₘₐₓ sin(ωt + φ)</div><div class="vars"><span><b>v</b> velocity (m/s)</span><span><b>vₘₐₓ</b> max speed (m/s)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>t</b> time (s)</span><span><b>φ</b> phase shift (rad)</span></div><p class="tip">Velocity at time t. + or − shows the direction.
+RADIANS, and the same φ as in x = A cos(ωt + φ).
+vₘₐₓ = Aω: type it as A*ω, e.g. 0.1*20.
+t answer = first time it has that velocity.
+ω: type 2π/T, 2πf or √(k/m).</p></div><div class="f"><div class="eq">A = A₀e^(−bt / 2m)</div><div class="vars"><span><b>A</b> amplitude (m)</span><span><b>A₀</b> start amplitude (m)</span><span><b>b</b> damping constant (kg/s)</span><span><b>t</b> time (s)</span><span><b>m</b> mass (kg)</span></div><p class="tip">Damped (friction slows it): the amplitude shrinks over time.
+Only told a fraction? Half the amplitude: type 1/1 as A₀ and 1/2 as A.
+Energy goes with A²: half the energy → type 1/1 as A₀ and √(1/2) as A.
+Critical damping (no bouncing): b = 2√(mk).
+Damped ω = √(k/m − (b/2m)²): type it in an ω box.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

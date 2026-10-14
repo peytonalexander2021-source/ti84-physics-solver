@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fluids Formulas: Physics I Cheat Sheet</title><meta name="description" content="Fluids formulas for Physics I with units and when to use each: ρ = m / V, p = F / A, p = p₀ + ρgh, and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/fluids-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Fluids formulas</h1><p class='lede'>Every fluids formula you need for Physics I (9 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">ρ = m / V</div><div class="vars"><span><b>ρ</b> density (kg/m³)</span><span><b>m</b> mass (kg)</span><span><b>V</b> volume (m³)</span></div><p class="tip">Water 1000 kg/m³, seawater 1025, ice 917, air 1.29, mercury 13600.
+g/cm³ × 1000 = kg/m³. 1 L = 0.001 m³. 1 cm³ = 1E−6 m³.
+Volume: box L*W*H, ball 4/3*π*r^3 (e.g. 4/3*π*0.1^3), cylinder π*r²*h.
+Know the weight W? Type W/9.8 for m.
+Specific gravity = ρ / 1000.</p></div><div class="f"><div class="eq">p = F / A</div><div class="vars"><span><b>p</b> pressure (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> area (m²)</span></div><p class="tip">Hydraulic lift: the pressure is the same on both pistons. Type F₁/A₁ in p, e.g. 300/(π*0.01²), the other piston&#x27;s area in A, solve F.
+Round area: π*r² (diameter d: π*d²/4).
+Window, lid or roof: type the pressure difference in p.
+Hatch at depth h (air inside): type ρgh in p, e.g. 1025*9.8*30.
+Dam or tank wall: type ρgh/2 in p (average), wall area in A.
+1 atm = 1.013E5 Pa = 760 mmHg = 14.7 psi. Weight: F = m*9.8.</p></div><div class="f"><div class="eq">p = p₀ + ρgh</div><div class="vars"><span><b>p</b> pressure at depth (Pa)</span><span><b>p₀</b> pressure on top (Pa)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>g</b> gravity (m/s²)</span><span><b>h</b> depth (m)</span></div><p class="tip">p₀ = pressure on top of the fluid (open to air: 1.013E5, filled in).
+Gauge pressure (tire, blood, &quot;above air&quot;): p₀ = 0.
+Two points in one fluid: p₀ = pressure at the higher point, p = at the lower, h = how much deeper.
+Seawater 1025, mercury 13600. mmHg × 133.3 = Pa.
+Barometer (vacuum on top): p₀ = 0, p = air pressure.
+U-tube, two liquids: type ρgh of one side in p (e.g. 1000*9.8*0.05), p₀ = 0, the other ρ, solve h.</p></div><div class="f"><div class="eq">Fb = ρVg</div><div class="vars"><span><b>Fb</b> buoyant force (N)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>V</b> submerged volume (m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">ρ = density of the FLUID (water 1000, seawater 1025, air 1.29), not the object.
+V = volume under the fluid (the whole object if it is fully under).
+Floating: Fb = its weight. Type m*9.8 in Fb, solve V (the part under).
+Weighed in air (W) and in water (Wₐ): type W−Wₐ in Fb (e.g. 25−21), solve V.
+Fb does not change with depth.</p></div><div class="f"><div class="eq">Wₐ = mg − ρVg</div><div class="vars"><span><b>Wₐ</b> apparent weight (N)</span><span><b>m</b> object mass (kg)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>V</b> submerged volume (m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Wₐ = string tension or scale reading while it is under the fluid.
+ρ = fluid density, V = object volume. Know its density? Type m/ρobj in V, e.g. 2/2700.
+Negative answer = it floats up; the string pulls down that hard.
+Floating on its own: Wₐ = 0, V = part under.
+Weighed in air (W) and in water (Wₐ): type W/9.8 for m, solve V, then ρ = m/V.
+Raft/balloon max load: Wₐ = 0, solve m, minus its own mass (+gas). Air 1.29.</p></div><div class="f"><div class="eq">f = ρobj / ρ</div><div class="vars"><span><b>f</b> fraction submerged</span><span><b>ρobj</b> object density (kg/m³)</span><span><b>ρ</b> fluid density (kg/m³)</span></div><p class="tip">Only for a FLOATING object.
+f = fraction under the fluid (0.8 = 80%). Part above = 1 − f.
+Floats with 2/3 under: type 2/3 for f.
+ρ = fluid density (water 1000, seawater 1025). Ice: ρobj = 917.
+Block: depth under = f × its height.</p></div><div class="f"><div class="eq">Q = Av</div><div class="vars"><span><b>Q</b> volume flow rate (m³/s)</span><span><b>A</b> pipe or hole area (m²)</span><span><b>v</b> flow speed (m/s)</span></div><p class="tip">Pipe gets narrower or wider (A₁v₁ = A₂v₂): Q is the same everywhere. Type A₁v₁ in Q, e.g. π*0.02²*1.5, the new A, solve v.
+Round pipe: A = π*r² (diameter d: π*d²/4).
+Several holes (shower head): A = n*π*r².
+Volume per time given: type V/t in Q, e.g. 0.1/72.
+1 L = 0.001 m³. 1 min = 60 s.</p></div><div class="f"><div class="eq">Q = V / t</div><div class="vars"><span><b>Q</b> volume flow rate (m³/s)</span><span><b>V</b> volume (m³)</span><span><b>t</b> time (s)</span></div><p class="tip">Time to fill a tank, or volume that flows in a time.
+Know the area and speed? Type A*v in Q, e.g. π*0.01²*3.
+1 L = 0.001 m³. 1 cm³ = 1E−6 m³. 1 min = 60 s.
+L/min to m³/s: × 0.001 / 60.</p></div><div class="f"><div class="eq">p₁+½ρv₁²+ρgy₁ = p₂+½ρv₂²+ρgy₂</div><div class="vars"><span><b>p₁</b> pressure at 1 (Pa)</span><span><b>v₁</b> speed at 1 (m/s)</span><span><b>y₁</b> height at 1 (m)</span><span><b>p₂</b> pressure at 2 (Pa)</span><span><b>v₂</b> speed at 2 (m/s)</span><span><b>y₂</b> height at 2 (m)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">1 and 2 = two spots in the same moving fluid. y = height (y = 0 at the lower spot).
+Open to air at both: type 0 for p₁ and p₂.
+Big tank surface or still fluid: v = 0.
+Hole in a tank: p₁ = p₂ = 0, v₁ = 0, y₁ = water height above hole, y₂ = 0, solve v₂ (= √(2gh)).
+Level pipe: y₁ = y₂ = 0. Know Q? Type Q/A in each v box, e.g. 0.002/(π*0.01²).</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

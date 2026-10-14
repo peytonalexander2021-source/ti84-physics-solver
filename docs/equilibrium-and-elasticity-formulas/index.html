@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Equilibrium and elasticity Formulas: Physics I Cheat Sheet</title><meta name="description" content="Equilibrium and elasticity formulas for Physics I with units and when to use each: F₁r₁ sinθ = F₂r₂ + F₃r₃, F₁ + F₂ = F₃ + F₄, Y = (F/A)(L₀/ΔL), and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/equilibrium-and-elasticity-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Equilibrium and elasticity formulas</h1><p class='lede'>Every equilibrium and elasticity formula you need for Physics I (7 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">F₁r₁ sinθ = F₂r₂ + F₃r₃</div><div class="vars"><span><b>F₁</b> force 1, one way (N)</span><span><b>r₁</b> pivot to f₁ dist (m)</span><span><b>θ</b> angle f₁ to beam (°)</span><span><b>F₂</b> force 2, other way (N)</span><span><b>r₂</b> pivot to f₂ dist (m)</span><span><b>F₃</b> force 3, other way (N)</span><span><b>r₃</b> pivot to f₃ dist (m)</span></div><p class="tip">Torque one way = torque other way. Pivot at hinge or unknown force.
+F₁ turns it one way; F₂, F₃ the other.
+Weight: m*9.8 at beam middle.
+Unused: F₃ = r₃ = 0. More: add F×r in one box (30*1.5+20*2), r = 1/1.
+Slant: r = dist×sin(force-to-beam angle). Ladder 53° to floor: 2.5sin(37).
+− answer: force points the other way.
+About to tip: other support = 0.
+Balance point: F₁ = total mass, r₁ empty, F₂ = m₁x₁+m₂x₂, r₂ = 1/1.</p></div><div class="f"><div class="eq">F₁ + F₂ = F₃ + F₄</div><div class="vars"><span><b>F₁</b> up/right force 1 (N)</span><span><b>F₂</b> up/right force 2 (N)</span><span><b>F₃</b> down/left force 1 (N)</span><span><b>F₄</b> down/left force 2 (N)</span></div><p class="tip">Up forces = down forces. Sideways: right = left (right in F₁, F₂).
+2+ forces on a side: add them in one box (200+350). Unused box: 0. Weight: m*9.8.
+Hinge (cable T at θ), leave F₁ empty:
+Up: F₂ = Tsin(θ), F₃, F₄ = weights.
+Sideways: F₃ = Tcos(θ), F₂ = F₄ = 0.
+− answer: it points the other way.
+Hinge size and angle: vectors topic.
+Ladder: friction = wall force; then μ from f = μN (Forces topic).</p></div><div class="f"><div class="eq">Y = (F/A)(L₀/ΔL)</div><div class="vars"><span><b>Y</b> modulus y or s (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> cross-section area (m²)</span><span><b>L₀</b> original length (m)</span><span><b>ΔL</b> change in length (m)</span></div><p class="tip">Stretch or squeeze along the length (wire, rod, bone, column).
+Round: A = π(d/2)², e.g. π(0.004/2)².
+Hanging mass: F = m*9.8.
+mm: ×0.001. cm²: ×1E−4. GPa: ×1E9.
+Steel Y = 2.0E11, aluminum 7.0E10, copper 1.1E11, bone 1.6E10 (squeezed 9E9).
+Squeezed: ΔL = how much shorter (no minus).
+Shear (top slides sideways): S in Y, slide Δx in ΔL, height in L₀, A = face pushed. Steel S = 7.5E10, aluminum 2.5E10.</p></div><div class="f"><div class="eq">stress = F / A</div><div class="vars"><span><b>P</b> stress (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> cross-section area (m²)</span></div><p class="tip">Stress = force per area (Pa = N/m²).
+Round wire, rod or bone: A = π(d/2)².
+Hanging mass: F = m*9.8.
+Breaking: P = breaking stress (ultimate strength).
+Leave F empty: biggest force. Leave A empty: smallest area.
+Bulk stress is just the pressure.</p></div><div class="f"><div class="eq">strain = ΔL / L₀</div><div class="vars"><span><b>ε</b> strain</span><span><b>ΔL</b> change in length (m)</span><span><b>L₀</b> original length (m)</span></div><p class="tip">Strain = fraction it stretched (no unit). ×100 for %.
+ΔL = how much longer or shorter. Same units for ΔL and L₀.
+Shear strain: put Δx in ΔL (height in L₀).
+Know stress and modulus instead: use stress = modulus × strain.</p></div><div class="f"><div class="eq">stress = modulus × strain</div><div class="vars"><span><b>P</b> stress (Pa)</span><span><b>Y</b> modulus y, b or s (Pa)</span><span><b>ε</b> strain</span></div><p class="tip">Works for all three: Y (stretch/squeeze), S (shear), B (squeezed on all sides).
+Know 2 of stress, modulus, strain: get the 3rd.
+Type stress as F/A and strain as ΔL/L₀ if you like, e.g. 500/(π(0.002)²).
+Biggest strain before breaking: P = breaking stress.</p></div><div class="f"><div class="eq">B = −Δp V₀ / ΔV</div><div class="vars"><span><b>B</b> bulk modulus (Pa)</span><span><b>Δp</b> pressure increase (Pa)</span><span><b>V₀</b> original volume (m³)</span><span><b>ΔV</b> volume change (&lt;0) (m³)</span></div><p class="tip">Squeezed on all sides (pressure, deep water).
+Δp = pressure increase. ΔV comes out − (it shrinks); type ΔV with − if given.
+Depth h: Δp = 1000*9.8*h (sea water 1025). 1 atm = 1.013E5 Pa.
+Fraction ΔV/V₀: type V₀ = 1/1 (×100 for %).
+Water B = 2.2E9, steel 1.6E11.
+Compressibility = 1/B.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

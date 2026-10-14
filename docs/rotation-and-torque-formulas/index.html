@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rotation and torque Formulas: Physics I Cheat Sheet</title><meta name="description" content="Rotation and torque formulas for Physics I with units and when to use each: ω = ω₀ + αt, Δθ = ω₀t + ½αt², ω² = ω₀² + 2αΔθ, and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/rotation-and-torque-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Rotation and torque formulas</h1><p class='lede'>Every rotation and torque formula you need for Physics I (11 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">ω = ω₀ + αt</div><div class="vars"><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>α</b> angular accel. (rad/s²)</span><span><b>t</b> time (s)</span></div><p class="tip">From rest: ω₀ = 0. Comes to a stop: ω = 0.
+Slowing down: α is negative.
+Given rpm? Type rpm*2π/60 to get rad/s (300 rpm: 300*2π/60).
+Given rev/s (Hz)? Type f*2π. One turn every T s? Type 2π/T.
+No time given? Use ω² = ω₀² + 2αΔθ.
+Rope or rim accel. a given? Type a/r for α.</p></div><div class="f"><div class="eq">Δθ = ω₀t + ½αt²</div><div class="vars"><span><b>Δθ</b> angle turned (rad)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>t</b> time (s)</span><span><b>α</b> angular accel. (rad/s²)</span></div><p class="tip">Use when you know the time and α.
+From rest: ω₀ = 0. Slowing down: α is negative.
+Steady spin (no speed-up): α = 0, so Δθ = ω₀t.
+Given revolutions? Type rev*2π (12 rev: 12*2π).
+Given degrees? Type deg*π/180.
+Want revolutions? Divide the Δθ answer by 2π.
+Given rpm? Type rpm*2π/60.
+Rope unwound or distance s on the rim: Δθ = s/r.
+Two answers for t? Use the smaller positive one.</p></div><div class="f"><div class="eq">ω² = ω₀² + 2αΔθ</div><div class="vars"><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>α</b> angular accel. (rad/s²)</span><span><b>Δθ</b> angle turned (rad)</span></div><p class="tip">Use when no time is given.
+From rest: ω₀ = 0. Stops: ω = 0 (α comes out negative).
+Revolutions: type rev*2π for Δθ (12 rev: 12*2π).
+Degrees: type deg*π/180.
+Given rpm? Type rpm*2π/60.
+Two answers for ω (+ and −)? Same speed, two spin directions: use + unless it turned back.</p></div><div class="f"><div class="eq">Δθ = ½(ω₀ + ω)t</div><div class="vars"><span><b>Δθ</b> angle turned (rad)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when α is not given and not asked.
+From rest: ω₀ = 0. Stops: ω = 0.
+Want revolutions? Divide the Δθ answer by 2π (6.283).
+Given revolutions: type rev*2π. Given rpm: type rpm*2π/60.
+(ω₀ + ω)/2 is the average ω.</p></div><div class="f"><div class="eq">vₜ = rω</div><div class="vars"><span><b>vₜ</b> tangential speed (m/s)</span><span><b>r</b> radius (m)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Speed of a point on the rim, or of a belt, rope or rolling wheel.
+ω in rad/s: rpm → type rpm*2π/60 (900 rpm: 900*2π/60). One turn every T s → type 2π/T.
+Same formula, other uses:
+s = rθ: put θ (rad) in the ω box, answer is s
+aₜ = rα: put α in the ω box, answer is aₜ
+ac = rω²: put ω² in the ω box (or ac = vₜ²/r)
+Total accel.: a = √(aₜ² + ac²)</p></div><div class="f"><div class="eq">τ = rF sinθ</div><div class="vars"><span><b>τ</b> torque (N·m)</span><span><b>r</b> pivot to force pt (m)</span><span><b>F</b> force (N)</span><span><b>θ</b> angle between r, f (°)</span></div><p class="tip">r = distance from the pivot (axis) to where F pushes.
+θ = angle between r and F. Push at a right angle (like a door handle): θ = 90.
+Push straight toward the pivot: θ = 0, no torque.
+Type τ as a positive size here. Add the sign after: counterclockwise +, clockwise −.
+Several forces: add the torques (net torque Στ).</p></div><div class="f"><div class="eq">Στ = Iα</div><div class="vars"><span><b>Στ</b> net torque (N·m)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>α</b> angular accel. (rad/s²)</span></div><p class="tip">Net torque: add the torques, counterclockwise +, clockwise −.
+Force on the rim at a right angle: τ = FR, type F*R (20 N on 0.3 m: 20*0.3).
+Type I right in, e.g. solid disk ½MR²: 1/2*4*0.3²
+Rope on a wheel: α = a/R.
+Rod on an end pivot, held level: weight acts at the center, type Στ = M*9.8*L/2 and I = 1/3*M*L².
+Then use ω = ω₀ + αt etc. for speed and turns.
+Block hanging on the wheel? Use a = mgR²/(I + mR²).</p></div><div class="f"><div class="eq">I = cMR²</div><div class="vars"><span><b>I</b> moment of inertia (kg·m²)</span><span><b>c</b> shape (y= tips)</span><span><b>M</b> mass (kg)</span><span><b>R</b> radius (rod: l) (m)</span></div><p class="tip">c by shape (type a fraction so sig figs stay right):
+Point mass, hoop, ring, thin pipe: 1/1
+Solid disk, cylinder, pulley: 1/2
+Solid sphere (ball): 2/5
+Hollow sphere: 2/3
+Rod about its center: 1/12 (L in the R box)
+Rod about one end: 1/3 (L in the R box)
+Axis a distance d from the center: add Md².
+Many parts: add them, I = I₁ + I₂ + …
+Point masses: I = m₁r₁² + m₂r₂² + …
+Type a sum right in any I box: 2*0.5²+3*0.2²</p></div><div class="f"><div class="eq">a = mgR² / (I + mR²)</div><div class="vars"><span><b>a</b> accel. of mass (m/s²)</span><span><b>m</b> hanging mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>I</b> pulley/wheel i (kg·m²)</span><span><b>R</b> pulley radius (m)</span></div><p class="tip">A block hangs from a rope on a pulley or wheel and falls.
+Disk pulley: type I as 1/2*M*R² (2 kg, 0.1 m: 1/2*2*0.1²).
+Then: tension T = m(g − a), α = a/R.
+Fall h from rest: v = √(2ah), t = √(2h/a)
+Also pulls a block on a smooth table? Add its m₂R² to I.
+Two hanging blocks (m₁ heavier): type m₁−m₂ for m and I+2*m₂*R² for I.
+Tensions: T₁ = m₁(g − a), T₂ = m₂(g + a)</p></div><div class="f"><div class="eq">K = ½Iω²</div><div class="vars"><span><b>K</b> rotational ke (J)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>ω</b> angular speed (rad/s)</span></div><p class="tip">Spin energy. ω in rad/s.
+No friction: energy at start = energy at end.
+Only spinning, and its center drops h: K = Mgh, type M*g*h (2 kg, 0.5 m: 2*9.8*0.5).
+Rod swinging down from level on an end pivot: h = L/2.
+Work by a torque: W = τΔθ, and W = K − K₀ (from rest: K = W).
+Rolling (moving + spinning)? Use the Rolling topic.</p></div><div class="f"><div class="eq">P = τω</div><div class="vars"><span><b>P</b> power (W)</span><span><b>τ</b> torque (N·m)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Power of a motor or engine. ω in rad/s.
+Given rpm? Type rpm*2π/60 for ω (3000 rpm: 3000*2π/60).
+Work by a steady torque: W = τΔθ (Δθ in rad).
+Power is also P = W/t (work / time).
+1 hp = 746 W.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

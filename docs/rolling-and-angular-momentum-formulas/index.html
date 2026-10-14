@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rolling and angular momentum Formulas: Physics I Cheat Sheet</title><meta name="description" content="Rolling and angular momentum formulas for Physics I with units and when to use each: v = ωR, v² = v₀² + 2gh / (1 + c), a = g sinθ / (1 + c), and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/rolling-and-angular-momentum-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Rolling and angular momentum formulas</h1><p class='lede'>Every rolling and angular momentum formula you need for Physics I (10 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">v = ωR</div><div class="vars"><span><b>v</b> center speed (m/s)</span><span><b>ω</b> angular speed (rad/s)</span><span><b>R</b> radius (m)</span></div><p class="tip">Rolling without slipping: center speed v = ωR.
+The point touching the ground is not moving; the top moves at 2v.
+Same idea for a = αR and distance rolled = Rθ: use aₜ = rα and s = rθ in Rotation.
+rpm given: type ω as rpm*2π/60, e.g. 300*2π/60.
+Revolutions: θ = 2πN (Rotation).</p></div><div class="f"><div class="eq">v² = v₀² + 2gh / (1 + c)</div><div class="vars"><span><b>v</b> center speed (m/s)</span><span><b>v₀</b> starting speed (m/s)</span><span><b>g</b> gravity (m/s²)</span><span><b>h</b> height drop (up −) (m)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Speed after rolling down h, no slipping (v₀ = 0 from rest).
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: c = I/(mR²).
+Rolling up: h negative (−2 = up 2 m).
+Ramp length d: h = d*sin(θ); d unknown: a = g sinθ/(1 + c), then Motion topic.
+Slides, no friction: c = 0. Block on pulley: c = (I/R² + table block m)/hanging m (no table block: I/(mR²)).</p></div><div class="f"><div class="eq">a = g sinθ / (1 + c)</div><div class="vars"><span><b>a</b> acceleration (m/s²)</span><span><b>g</b> gravity (m/s²)</span><span><b>θ</b> incline angle (°)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Acceleration rolling down a ramp, no slipping. θ = ramp angle.
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: type I/(mR²) for c.
+Yo-yo falling: θ = 90, c = I/(mr²), r = axle radius.
+Block on a pulley: θ = 90, c = (I/R² + table block m)/hanging m. No table block: c = I/(mR²).
+Time or distance: use this a in Motion &amp; projectiles (rolling up: −a).</p></div><div class="f"><div class="eq">K = ½mv²(1 + c)</div><div class="vars"><span><b>K</b> total ke (J)</span><span><b>m</b> mass (kg)</span><span><b>v</b> center speed (m/s)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Total KE of a rolling object (moving + spinning).
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: type I/(mR²) for c, e.g. 0.8/(5*0.3²).
+Moving part only (½mv²): c = 0.
+Spinning part only: K = ½Iω² in Rotation.
+Fraction that is spinning = c/(1 + c), e.g. solid sphere 0.4/1.4 = 0.29.</p></div><div class="f"><div class="eq">μₛ = c tanθ / (1 + c)</div><div class="vars"><span><b>μₛ</b> min static μ</span><span><b>c</b> shape: i = cmr²</span><span><b>θ</b> incline angle (°)</span></div><p class="tip">Smallest static friction coefficient that lets it roll down the ramp without slipping. Less than this: it slides.
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3.
+Steepest ramp it can roll on: leave θ empty.
+Friction force on it: f = μN (Forces) with the μₛ found here and N = m*9.8*cos(θ).</p></div><div class="f"><div class="eq">L = Iω</div><div class="vars"><span><b>L</b> angular momentum (kg·m²/s)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Angular momentum of a spinning object.
+Type I right in the box: disk 0.5*m*R², hoop or point m*R², sphere 0.4*m*R², rod about its middle m*length²/12, e.g. 0.5*2*0.3².
+rpm given: type ω as rpm*2π/60, e.g. 300*2π/60.
+Period T given: type ω as 2π/T (Earth spin: 2π/86400).
+Counterclockwise +, clockwise −.
+Rolling: ω = v/R.
+Final ω after parts join: L = total starting L (person: m*v*r), I = final total I.</p></div><div class="f"><div class="eq">I₁ω₁ = I₂ω₂</div><div class="vars"><span><b>I₁</b> starting inertia (kg·m²)</span><span><b>ω₁</b> starting ω (rad/s)</span><span><b>I₂</b> final inertia (kg·m²)</span><span><b>ω₂</b> final ω (rad/s)</span></div><p class="tip">No outside torque, so L stays the same: skater pulls arms in, person jumps on or walks across a turning disk, two disks stick together.
+Add the parts: I₂ = 0.5*100*2²+40*2² (disk + person at the edge; person = mr²).
+Turning opposite ways: one ω is negative.
+rpm in gives rpm out, no change needed.
+Parts at different ω at the start, or a person running on: use L = Iω.
+KE lost: K = ½Iω² (Rotation).</p></div><div class="f"><div class="eq">L = mvr sinφ</div><div class="vars"><span><b>L</b> angular momentum (kg·m²/s)</span><span><b>m</b> mass (kg)</span><span><b>v</b> speed (m/s)</span><span><b>r</b> dist. from origin (m)</span><span><b>φ</b> angle from r to v (°)</span></div><p class="tip">Angular momentum of a small object about a point.
+φ = angle between r (point to object) and v.
+Moving in a circle, or r = closest distance to its straight path: φ = 90.
+Moving straight at the point: L = 0.
+Person running onto a merry-go-round edge: L = mvr (φ = 90).
+r and v as x,y parts: L = m(x·vᵧ − y·vₓ), + = counterclockwise.</p></div><div class="f"><div class="eq">Στ = ΔL / Δt</div><div class="vars"><span><b>Στ</b> net torque (N·m)</span><span><b>ΔL</b> change in l (kg·m²/s)</span><span><b>Δt</b> time (s)</span></div><p class="tip">Net torque = change in angular momentum / time.
+ΔL = L after − L before. One object: type I*(ω after − ω before), e.g. 4*(0−30).
+Slowing down: ΔL and Στ come out negative.
+Know α instead of time? Use Στ = Iα in Rotation.</p></div><div class="f"><div class="eq">ωₚ = rMg / (Iω)</div><div class="vars"><span><b>ωₚ</b> precession rate (rad/s)</span><span><b>r</b> pivot to cm dist (m)</span><span><b>M</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>I</b> i about spin axis (kg·m²)</span><span><b>ω</b> spin rate (rad/s)</span></div><p class="tip">Gyroscope or spinning top: how fast its axis swings around in a circle (rad/s).
+r = pivot to center of mass, M = mass.
+I and ω = its spin about its own axis, e.g. disk I = 0.5*M*R².
+rpm given: type ω as rpm*2π/60. rev/s given: rev/s*2π, e.g. 40*2π.
+Time for one swing around: T = 2π/ωₚ. T given: type ωₚ as 2π/T.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

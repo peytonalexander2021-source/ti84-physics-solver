@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Motion with calculus Formulas: Physics I Cheat Sheet</title><meta name="description" content="Motion with calculus formulas for Physics I with units and when to use each: v = B + 2Ct + 3Dt², a = 2C + 6Dt, v = v₀ + At + ½Bt² + Ct³/3, and more. Solve them free on a TI-84 Plus CE.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/motion-with-calculus-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Motion with calculus formulas</h1><p class='lede'>Every motion with calculus formula you need for Physics I (3 formulas), with what each letter means, its units, and when to use it.</p></header><div class='list'><div class="f"><div class="eq">v = B + 2Ct + 3Dt²</div><div class="vars"><span><b>v</b> velocity at time t (m/s)</span><span><b>B</b> t number in x(t) (m/s)</span><span><b>C</b> t² number in x(t) (m/s²)</span><span><b>D</b> t³ number in x(t) (m/s³)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when x = A + Bt + Ct² + Dt³.
+B, C, D = the numbers in front of t, t², t³. Missing term: 0. Keep minus signs.
+Position at time t: type x(t) on the home screen with your t, like 5−12(2)+2(2)³.
+Given v(t)? Put its t, t², t³ numbers in B, C, D (skip its plain number): answer is a (m/s²).
+Leave t empty to find when v hits a value (v = 0: it stops or turns).
+2-D: do x and y one at a time, then speed = √(vₓ² + vᵧ²).</p></div><div class="f"><div class="eq">a = 2C + 6Dt</div><div class="vars"><span><b>a</b> accel. at time t (m/s²)</span><span><b>C</b> t² number in x(t) (m/s²)</span><span><b>D</b> t³ number in x(t) (m/s³)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when x = A + Bt + Ct² + Dt³.
+C, D = the numbers in front of t², t³. Missing term: 0. Keep minus signs.
+No t³ term: a = 2C at every time.
+Given v(t)? Use v = B + 2Ct + 3Dt² with B, C, D = v(t)&#x27;s t, t², t³ numbers: answer is a.
+2-D: do x and y one at a time, then size = √(aₓ² + aᵧ²).</p></div><div class="f"><div class="eq">v = v₀ + At + ½Bt² + Ct³/3</div><div class="vars"><span><b>v</b> velocity at time t (m/s)</span><span><b>v₀</b> velocity at t = 0 (m/s)</span><span><b>A</b> plain number, a(t) (m/s²)</span><span><b>B</b> t number in a(t) (m/s³)</span><span><b>C</b> t² number in a(t) (m/s^4)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when a = A + Bt + Ct².
+A = plain number, B and C = numbers in front of t and t². Missing term: 0.
+v₀ = velocity at t = 0 (from rest: 0).
+Know v at another time? Leave v₀ empty first.
+Given v(t), want x? A, B, C = v(t)&#x27;s plain, t, t² numbers; x₀ (or 0) in v₀: answer is x (m).
+Δx from t₁ to t₂: do t₂, then t₁, subtract.
+Find t (a(t) has no t²): in v = B + 2Ct + 3Dt² type B = v₀, C = A/2, D = (a(t)&#x27;s t number)/6.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>

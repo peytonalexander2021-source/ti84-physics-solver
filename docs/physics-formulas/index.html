@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Physics I Formula Sheet: All 97 Formulas</title><meta name="description" content="The complete Physics I (University Physics Vol. 1) formula sheet: motion, forces, energy, momentum, rotation, gravity, fluids and oscillations, with units and when to use each.">
+<link rel="canonical" href="https://peytonalexander2021-source.github.io/ti84-physics-solver/physics-formulas/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>:root{--bg:#eef1f6;--ink:#141a26;--muted:#5a6375;--line:#d3d9e4;--card:#fff;--accent:#2a5bd7;--fx:#0f2a66;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131b;--ink:#e7ebf3;--muted:#9aa4b8;--line:#283043;--card:#171d29;--accent:#6c9cff;--fx:#cfe0ff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.1}h2{font-size:21px}p{margin:0}a{color:var(--accent)}
+nav{font-size:14px;color:var(--muted)}.lede{color:var(--muted);max-width:62ch;margin-top:10px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.eq{font:600 20px "Cambria Math","STIX Two Math",Cambria,serif;color:var(--fx);overflow-x:auto}
+.vars{font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}.vars b{color:var(--ink);font-weight:600}
+.tip{font-size:15px;white-space:pre-line}.list{display:grid;gap:12px}
+.cta{background:var(--card);border:1px solid var(--accent);border-radius:14px;padding:18px;display:grid;gap:10px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border-radius:8px;padding:10px 16px;text-decoration:none;display:inline-block;justify-self:start}
+ul.t{columns:2 220px;padding-left:18px;margin:0}</style></head><body><main>
+<nav><a href="../">PHYSPRO by Formula Foundry</a> · <a href="../physics-formulas/">All Physics I formulas</a></nav>
+<header><h1>Physics I formula sheet</h1><p class='lede'>All 97 formulas for a first university physics course, grouped by topic, with what each letter means, its units, and when to use it.</p></header><section><ul class='t'><li><a href="../measurement-and-vectors-formulas/">Measurement and vectors</a> (7)</li><li><a href="../motion-and-projectiles-formulas/">Motion and projectiles</a> (5)</li><li><a href="../motion-with-calculus-formulas/">Motion with calculus</a> (3)</li><li><a href="../forces-and-circular-motion-formulas/">Forces and circular motion</a> (6)</li><li><a href="../work-and-energy-formulas/">Work and energy</a> (10)</li><li><a href="../momentum-and-collisions-formulas/">Momentum and collisions</a> (9)</li><li><a href="../rotation-and-torque-formulas/">Rotation and torque</a> (11)</li><li><a href="../rolling-and-angular-momentum-formulas/">Rolling and angular momentum</a> (10)</li><li><a href="../equilibrium-and-elasticity-formulas/">Equilibrium and elasticity</a> (7)</li><li><a href="../gravity-and-orbits-formulas/">Gravity and orbits</a> (9)</li><li><a href="../fluids-formulas/">Fluids</a> (9)</li><li><a href="../oscillations-formulas/">Oscillations</a> (11)</li></ul></section><h2 id='measurement-and-vectors'>Measurement and vectors</h2><div class='list'><div class="f"><div class="eq">A = √(Aₓ² + Aᵧ² + A_z²)</div><div class="vars"><span><b>A</b> vector size</span><span><b>Aₓ</b> x part</span><span><b>Aᵧ</b> y part</span><span><b>A_z</b> z part (0 if 2-d)</span></div><p class="tip">A = size of the vector. Flat (2-D) problem: keep A_z = 0.
+Add or subtract vectors right in the boxes, part by part: for C = A − B type 10.4−6.25 in the Aₓ box (same for y). 2A + B: type 2×10.4+6.25.
+Vectors given as size + angle: type the parts, e.g. Aₓ box: 175cos(60)+80cos(90), Aᵧ box: 175sin(60)+80sin(90).
+Boat and river, plane and wind, rain seen from a car: add the velocity parts the same way.</p></div><div class="f"><div class="eq">θ = tan⁻¹(Aᵧ/Aₓ)</div><div class="vars"><span><b>θ</b> angle from +x (°)</span><span><b>Aₓ</b> x part</span><span><b>Aᵧ</b> y part</span></div><p class="tip">θ = direction, counterclockwise from the +x axis (east).
+If Aₓ &lt; 0: add 180°. If Aₓ &gt; 0 and Aᵧ &lt; 0: add 360°.
+Aₓ = 0: θ = 90° (Aᵧ &gt; 0) or 270° (Aᵧ &lt; 0).
+Angle from vertical or like 59° W of N: vertical (N) part in Aₓ, other part in Aᵧ, both positive.
+Right triangle: θ is the corner next to side Aₓ. Empty Aᵧ gives the far side (river width).
+Sagging rope: Aᵧ = sag, Aₓ = half the span.
+Radians: answer × π/180.</p></div><div class="f"><div class="eq">Aₓ = Acosθ</div><div class="vars"><span><b>Aₓ</b> x part</span><span><b>A</b> vector size</span><span><b>θ</b> angle from +x (°)</span></div><p class="tip">θ is measured from the +x axis. Angle given from the y axis: type 90−angle.
+Angle in radians: type it ×180/π.
+Ramp: A = m×9.8, θ = ramp angle gives Aₓ = normal force N.
+Cross a river straight: A = boat speed, Aₓ = river speed gives θ = aim angle upstream from the bank.
+3-D, angle from +z given: type it as θ to get A_z. For Aₓ and Aᵧ type A×sin(z angle) in the A box.
+Empty θ gives 0° to 180°; if Aᵧ &lt; 0 use 360° − θ.</p></div><div class="f"><div class="eq">Aᵧ = Asinθ</div><div class="vars"><span><b>Aᵧ</b> y part</span><span><b>A</b> vector size</span><span><b>θ</b> angle from +x (°)</span></div><p class="tip">θ is measured from the +x axis.
+Ramp: A = m×9.8, θ = ramp angle gives the weight part down the ramp.
+Sagging rope: first find θ = tan⁻¹(sag/half span). Then A = tension in one half, Aᵧ = m×9.8/2.
+Two cables at 90° to each other holding a weight: A = m×9.8, θ = one cable&#x27;s angle above level, Aᵧ = that cable&#x27;s tension.
+Swim straight across a river: A = swim speed, Aᵧ = river speed, θ = aim angle from straight across.</p></div><div class="f"><div class="eq">A·B = ABcosφ</div><div class="vars"><span><b>A·B</b> dot product</span><span><b>A</b> size of a</span><span><b>B</b> size of b</span><span><b>φ</b> angle between (°)</span></div><p class="tip">φ = angle between A and B (put their tails together).
+From parts: type AₓBₓ+AᵧBᵧ+A_zB_z in the A·B box, e.g. 2×(−3)+5×0+0×4.
+Sizes from parts: type A as √(2²+5²+0²).
+A·B = 0: the vectors are at 90°. A·B &lt; 0: φ is over 90°.</p></div><div class="f"><div class="eq">|A×B| = ABsinφ</div><div class="vars"><span><b>A×B</b> size of a×b</span><span><b>A</b> size of a</span><span><b>B</b> size of b</span><span><b>φ</b> angle between (°)</span></div><p class="tip">φ = angle between A and B (tails together). Empty φ gives two angles that both work.
+Direction: right-hand rule. Fingers along A, curl toward B, thumb = A×B. B×A points the opposite way. x×y = z, y×z = x, z×x = y.
+Parts by hand: x = AᵧB_z − A_zBᵧ, y = A_zBₓ − AₓB_z, z = AₓBᵧ − AᵧBₓ.
+Parallel vectors: A×B = 0.</p></div><div class="f"><div class="eq">ρ = m/V</div><div class="vars"><span><b>ρ</b> density (kg/m³)</span><span><b>m</b> mass (kg)</span><span><b>V</b> volume (m³)</span></div><p class="tip">Type kg and m³ (answer in kg/m³). For g/cm³ divide the answer by 1000.
+1 g = 0.001 kg. 1 L = 0.001 m³. 1 cm³ = 1E−6 m³.
+Volume: cube the factor. 1 ft³ = 0.3048^3 m³.
+Sphere: V = 4/3×π×(d/2)^3. Box: V = length×width×height.
+Unit changes: 1 in = 2.54 cm, 1 ft = 0.3048 m, 1 mi = 1609 m, 1 h = 3600 s, 1 yr = 365 days.
+Prefixes: k = 1E3, M = 1E6, c = 0.01, m = 0.001, μ = 1E−6, n = 1E−9.</p></div></div><h2 id='motion-and-projectiles'>Motion and projectiles</h2><div class='list'><div class="f"><div class="eq">v = v₀ + at</div><div class="vars"><span><b>v</b> final velocity (m/s)</span><span><b>v₀</b> starting velocity (m/s)</span><span><b>a</b> acceleration (m/s²)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when time is in the problem (steady a).
+Up/right is +. Free fall: a = −9.8.
+Stops, or top of a throw: v = 0.
+Lands at launch height: v = −v₀ gives the flight time.
+Projectile: do x and y apart. y: a = −9.8, v₀ = speed×sin(θ), like 22×sin(40). x: a = 0.
+Straight-line a-t graph: a = (a₁+a₂)/2, t = t₂−t₁.
+v(t) = 3 + 4t: v₀ = 3, a = 4. x(t) = A + Bt + Ct²: v₀ = B, a = 2C.
+Sliding to a stop on friction: a = −μ×9.8.</p></div><div class="f"><div class="eq">vₐ = Δx / t</div><div class="vars"><span><b>vₐ</b> average velocity (m/s)</span><span><b>Δx</b> displacement (m)</span><span><b>t</b> time (s)</span></div><p class="tip">Average velocity, or steady speed (a = 0). Can be −.
+Δx = end − start position. t = end − start time.
+Average SPEED: Δx = total distance.
+Steady a (speed-up or braking): vₐ = (v₀+v)/2.
+Legs: Δx = sum of v×t (west −), t = total.
+Projectile sideways: vₐ = speed×cos(θ).
+River crossing: Δx = width, vₐ = speed across.
+Circle speed: Δx = 2πr, t = 1/f (f = rpm/60).
+mph with hours is OK. km/h to m/s: type 90/3.6.</p></div><div class="f"><div class="eq">Δx = v₀t + ½at²</div><div class="vars"><span><b>Δx</b> displacement (m)</span><span><b>v₀</b> starting velocity (m/s)</span><span><b>t</b> time (s)</span><span><b>a</b> acceleration (m/s²)</span></div><p class="tip">Use when Δx and t are in the problem. Empty t: earliest first.
+Up/right is +. Free fall: a = −9.8. Up/down: Δx is Δy.
+Dropped, or thrown level: y part v₀ = 0, Δy = −height. Sideways: a = 0, v₀ = speed (type it +).
+At an angle: y part v₀ = speed×sin(θ), like 22×sin(40).
+Lands at launch height (Δy = 0): flight time is the &quot;or&quot; answer.
+Catch-up: Δx = gap, v₀ = v₁−v₂, a = a₁−a₂ (1 = chaser).
+km/h to m/s: type 150/3.6.</p></div><div class="f"><div class="eq">v² = v₀² + 2aΔx</div><div class="vars"><span><b>v</b> final velocity (m/s)</span><span><b>v₀</b> starting velocity (m/s)</span><span><b>a</b> acceleration (m/s²)</span><span><b>Δx</b> displacement (m)</span></div><p class="tip">Use when there is no time in the problem.
+Up/right is +. Free fall: a = −9.8.
+Top of a throw: v = 0. Leave Δx empty to get the max height.
+Projectile max height: y part v₀ = speed×sin(θ), like 22×sin(40).
+v or v₀ comes out + or −: + first. Moving down or left: use the − one.
+From rest: v₀ = 0. Stops: v = 0. Friction: a = −μ×9.8.</p></div><div class="f"><div class="eq">R = v₀²sin(2θ) / g</div><div class="vars"><span><b>R</b> range (level) (m)</span><span><b>v₀</b> launch speed (m/s)</span><span><b>θ</b> launch angle (°)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Only when it lands at the height it was launched from.
+R = sideways distance. θ = angle above level.
+Empty θ: 2 angles work (they add to 90°).
+Longest range: θ = 45°.
+Max height: v² formula, v₀ = speed×sin(θ), v = 0, a = −9.8.
+Time in air: Δx formula, Δx = 0, a = −9.8, v₀ = speed×sin(θ); take the &quot;or&quot; answer.
+Not level: do x and y apart (x: a = 0, y: a = −9.8).
+Speed + angle from x and y parts: Measurement &amp; vectors.</p></div></div><h2 id='motion-with-calculus'>Motion with calculus</h2><div class='list'><div class="f"><div class="eq">v = B + 2Ct + 3Dt²</div><div class="vars"><span><b>v</b> velocity at time t (m/s)</span><span><b>B</b> t number in x(t) (m/s)</span><span><b>C</b> t² number in x(t) (m/s²)</span><span><b>D</b> t³ number in x(t) (m/s³)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when x = A + Bt + Ct² + Dt³.
+B, C, D = the numbers in front of t, t², t³. Missing term: 0. Keep minus signs.
+Position at time t: type x(t) on the home screen with your t, like 5−12(2)+2(2)³.
+Given v(t)? Put its t, t², t³ numbers in B, C, D (skip its plain number): answer is a (m/s²).
+Leave t empty to find when v hits a value (v = 0: it stops or turns).
+2-D: do x and y one at a time, then speed = √(vₓ² + vᵧ²).</p></div><div class="f"><div class="eq">a = 2C + 6Dt</div><div class="vars"><span><b>a</b> accel. at time t (m/s²)</span><span><b>C</b> t² number in x(t) (m/s²)</span><span><b>D</b> t³ number in x(t) (m/s³)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when x = A + Bt + Ct² + Dt³.
+C, D = the numbers in front of t², t³. Missing term: 0. Keep minus signs.
+No t³ term: a = 2C at every time.
+Given v(t)? Use v = B + 2Ct + 3Dt² with B, C, D = v(t)&#x27;s t, t², t³ numbers: answer is a.
+2-D: do x and y one at a time, then size = √(aₓ² + aᵧ²).</p></div><div class="f"><div class="eq">v = v₀ + At + ½Bt² + Ct³/3</div><div class="vars"><span><b>v</b> velocity at time t (m/s)</span><span><b>v₀</b> velocity at t = 0 (m/s)</span><span><b>A</b> plain number, a(t) (m/s²)</span><span><b>B</b> t number in a(t) (m/s³)</span><span><b>C</b> t² number in a(t) (m/s^4)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when a = A + Bt + Ct².
+A = plain number, B and C = numbers in front of t and t². Missing term: 0.
+v₀ = velocity at t = 0 (from rest: 0).
+Know v at another time? Leave v₀ empty first.
+Given v(t), want x? A, B, C = v(t)&#x27;s plain, t, t² numbers; x₀ (or 0) in v₀: answer is x (m).
+Δx from t₁ to t₂: do t₂, then t₁, subtract.
+Find t (a(t) has no t²): in v = B + 2Ct + 3Dt² type B = v₀, C = A/2, D = (a(t)&#x27;s t number)/6.</p></div></div><h2 id='forces-and-circular-motion'>Forces and circular motion</h2><div class='list'><div class="f"><div class="eq">Fₙₑₜ = ma</div><div class="vars"><span><b>Fₙₑₜ</b> net force (N)</span><span><b>m</b> mass (kg)</span><span><b>a</b> acceleration (m/s²)</span></div><p class="tip">Fnet = all forces along the motion, with signs (type 310+420−610 or 26cos(22)).
+At rest or steady speed: a = 0.
+Scale, rope or floor holding m: type 9.8+a in the a box (a − if down).
+Tied blocks: Fnet = weights pulling, with signs (Atwood 5*9.8−3*9.8), m = total (5+3).
+Then use Fnet = ma on one block with every force on it, e.g. Atwood T − m₁g = m₁a so T = m₁(g + a).
+3rd law: same force on both.</p></div><div class="f"><div class="eq">W = mg</div><div class="vars"><span><b>W</b> weight (N)</span><span><b>m</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Level floor, nothing else pushing up or down: normal force N = mg.
+Hanging at rest: rope tension = mg (one rope holding two: m box 92+58).
+Pulley, 2 rope pieces hold the load: each pulls half (m box 42/2).
+Ramp: N = mgcosθ, type 7cos(38) in the m box.
+Pushed down with F: N = mg + F. Pulled up: N = mg − F.
+Moon: g = 1.62. Mass is the same everywhere.</p></div><div class="f"><div class="eq">f = μN</div><div class="vars"><span><b>f</b> friction force (N)</span><span><b>μ</b> friction coeff.</span><span><b>N</b> normal force (N)</span></div><p class="tip">μₛ (static): most it can hold = push that just starts it moving.
+μₖ (kinetic): while it slides.
+Not moving, not about to slip: friction = the push.
+N on level floor = mg: type 25*9.8 in the N box.
+On a ramp: type 7*9.8cos(38) in the N box.
+Rope pulling up at θ: N = mg − Fsinθ, type 20*9.8−90sin(25).</p></div><div class="f"><div class="eq">a = g(sinθ − μcosθ)</div><div class="vars"><span><b>a</b> accel. down ramp (m/s²)</span><span><b>g</b> gravity (m/s²)</span><span><b>θ</b> ramp angle (°)</span><span><b>μ</b> friction coeff.</span></div><p class="tip">a = acceleration DOWN the ramp. μ = μₖ while it slides.
+Frictionless: μ = 0.
+Level floor: θ = 0, so a = −μg (slowing down).
+Angle where it just starts to slide: a = 0, μ = μₛ.
+Sliding UP the ramp: type μ as −μₖ (a is still + down the ramp).
+Ramp normal force: W = mg with 7cos(38) in the m box.</p></div><div class="f"><div class="eq">a = v² / r</div><div class="vars"><span><b>a</b> centripetal acc. (m/s²)</span><span><b>v</b> speed (m/s)</span><span><b>r</b> radius (m)</span></div><p class="tip">a points to the center. Divide by 9.8 for g&#x27;s.
+Force toward the center (string, tube): Fnet = ma with this a (a box: 16²/15).
+Speed from lap time T: type 2π*r/T in the v box; PLUG IN shows v (3 rev/s: T = 1/3; rpm: T = 60/rpm).
+Know v and T: type v*T/(2π) in the r box.
+Flat curve, top speed before skidding: a = μₛ*9.8.
+Banked curve, no friction: a = 9.8tan(θ).
+Top of a hill, car leaving the road: a = 9.8.</p></div><div class="f"><div class="eq">v = √(2mg / (ρCA))</div><div class="vars"><span><b>v</b> terminal speed (m/s)</span><span><b>m</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>ρ</b> air density (kg/m³)</span><span><b>C</b> drag coefficient</span><span><b>A</b> area facing air (m²)</span></div><p class="tip">Terminal speed: air drag = weight, so it stops speeding up.
+ρ = 1.2 for air (change it if the problem gives one).
+C = drag coefficient (no unit).
+A = area facing the air (m²).
+4 times the mass: 2 times the speed.</p></div></div><h2 id='work-and-energy'>Work and energy</h2><div class='list'><div class="f"><div class="eq">W = Fd cosθ</div><div class="vars"><span><b>W</b> work (J)</span><span><b>F</b> force (N)</span><span><b>d</b> distance (m)</span><span><b>θ</b> angle f to motion (°)</span></div><p class="tip">θ = angle between the force and the way it moves.
+Along the motion: θ = 0. Against it: θ = 180. Sideways (normal force): W = 0.
+Friction: F = μₖ×m×g, θ = 180. On a ramp: F = μₖ×m×g×cos(ramp angle).
+Gravity: F = m×g, d = height. Up θ = 180, down θ = 0.
+Stopping distance: W = −½mv₀² (e.g. −0.5×2×5²), F = friction, θ = 180.
+F vs x graph: W = area under it.
+F = c×x^n from x₁ to x₂: W = c×(x₂^(n+1) − x₁^(n+1))/(n+1).</p></div><div class="f"><div class="eq">K = ½mv²</div><div class="vars"><span><b>K</b> kinetic energy (J)</span><span><b>m</b> mass (kg)</span><span><b>v</b> speed (m/s)</span></div><p class="tip">Kinetic energy = energy of motion.
+v is the speed (always +, the direction does not matter).
+2 times the speed = 4 times the K.
+Momentum p given instead of v: type v = p/m (e.g. 12/3).</p></div><div class="f"><div class="eq">Wₙₑₜ = ½mv² − ½mv₀²</div><div class="vars"><span><b>Wₙₑₜ</b> net work (J)</span><span><b>m</b> mass (kg)</span><span><b>v</b> final speed (m/s)</span><span><b>v₀</b> starting speed (m/s)</span></div><p class="tip">Net work = change in kinetic energy (work-energy theorem).
+Starts from rest: v₀ = 0. Comes to a stop: v = 0.
+Wₙₑₜ = work of ALL forces added up (friction work is −).
+Only friction on flat ground: Wₙₑₜ = −μₖ×m×g×d (e.g. −0.3×2×9.8×5).
+Stopping distance: use W = Fd cosθ with W = −½mv₀².</p></div><div class="f"><div class="eq">U = mgh</div><div class="vars"><span><b>U</b> potential energy (J)</span><span><b>m</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>h</b> height (m)</span></div><p class="tip">h = height above the zero level you pick (often the ground). Below it, h is −.
+Change in U: type the height change as h (e.g. 12−3).
+Work done BY gravity = −ΔU.
+Work to lift something at steady speed = mgh.</p></div><div class="f"><div class="eq">½mv₀² + mgh₀ + Wnc = ½mv² + mgh</div><div class="vars"><span><b>m</b> mass (1 if none) (kg)</span><span><b>v₀</b> starting speed (m/s)</span><span><b>h₀</b> starting height (m)</span><span><b>Wnc</b> friction/push work (J)</span><span><b>v</b> final speed (m/s)</span><span><b>h</b> final height (m)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Energy at start + Wnc = energy at end.
+No friction: leave Wnc = 0. No mass given: leave m = 1.
+Ramp of length d: h = d×sin(θ) (e.g. 4×sin(30)).
+Friction: Wnc = −μₖ×m×g×d. On a ramp: −μₖ×m×g×cos(θ)×d.
+Spring pushes it off: Wnc = ½kx² (e.g. 0.5×400×0.1²). It squeezes a spring: −½kx².
+Pendulum: h₀ = L−L×cos(θ).
+Zero height = lowest point. Energy lost = −Wnc.
+To find m or Wnc, press DEL on its box first.</p></div><div class="f"><div class="eq">h = L(1 − cosθ)</div><div class="vars"><span><b>h</b> rise above bottom (m)</span><span><b>L</b> string length (m)</span><span><b>θ</b> swing angle (°)</span></div><p class="tip">Pendulum or swing: how high the bob is above its lowest point.
+θ = angle from straight down.
+Then use the energy formula with this h.
+&quot;To what angle does it swing?&quot;: find h with the energy formula, then θ here.</p></div><div class="f"><div class="eq">F = kx</div><div class="vars"><span><b>F</b> spring force (N)</span><span><b>k</b> spring constant (N/m)</span><span><b>x</b> stretch/compress (m)</span></div><p class="tip">Hooke&#x27;s law: force to hold a spring stretched or squeezed by x.
+Find k here first, then use U = ½kx².
+Mass hanging at rest: F = m×g (e.g. 2×9.8).
+The spring pulls back the other way (F = −kx); type sizes here.
+cm to m: 5 cm = 0.05.</p></div><div class="f"><div class="eq">U = ½kx²</div><div class="vars"><span><b>U</b> spring energy (J)</span><span><b>k</b> spring constant (N/m)</span><span><b>x</b> stretch/compress (m)</span></div><p class="tip">Energy stored in a stretched or squeezed spring.
+x = change from its natural length, in m (5 cm = 0.05).
+Work from x₁ to x₂: type x = √(x₂²−x₁²), e.g. √(0.1²−0.05²).
+Spring launches a mass: energy formula with Wnc = ½kx².
+How far it gets squeezed (flat floor): get Wnc from the energy formula (v = 0), type it here as U without the −.
+Dropped from h onto it: x = (m×g + √((m×g)² + 2×k×m×g×h))/k.</p></div><div class="f"><div class="eq">P = W / t</div><div class="vars"><span><b>P</b> power (W)</span><span><b>W</b> work or energy (J)</span><span><b>t</b> time (s)</span></div><p class="tip">Power = how fast work is done (1 W = 1 J per second).
+W can be any energy change: lifting mgh (e.g. 70×9.8×5), speeding up ½mv².
+Energy used in a time: leave W empty.
+1 hp = 746 W. 1 kW = 1000 W.</p></div><div class="f"><div class="eq">P = Fv</div><div class="vars"><span><b>P</b> power (W)</span><span><b>F</b> force along motion (N)</span><span><b>v</b> speed (m/s)</span></div><p class="tip">Power while moving at speed v.
+Lifting at steady speed: F = m×g (e.g. 500×9.8).
+Steady speed against friction or drag: F = that force.
+Up a slope at steady speed: F = m×g×sin(θ) + friction (e.g. 1200×9.8×sin(5)+500).
+Force at an angle: type F×cos(θ) as F.</p></div></div><h2 id='momentum-and-collisions'>Momentum and collisions</h2><div class='list'><div class="f"><div class="eq">p = mv</div><div class="vars"><span><b>p</b> momentum (kg·m/s)</span><span><b>m</b> mass (kg)</span><span><b>v</b> velocity (m/s)</span></div><p class="tip">Momentum = mass × velocity.
+Sign = direction: pick one way as +, the other way is −.
+Total momentum: add up every object&#x27;s mv (with signs).
+2-D crash at right angles, stuck together: type p as √(pₓ²+pᵧ²), e.g. √((1200*20)²+(1500*15)²), and m as m₁+m₂. Then v = speed after.
+Direction after: θ = tan⁻¹(pᵧ/pₓ); add 180° if pₓ &lt; 0.</p></div><div class="f"><div class="eq">m₁v₁ + m₂v₂ = m₁v₁&#x27; + m₂v₂&#x27;</div><div class="vars"><span><b>m₁</b> mass 1 (kg)</span><span><b>v₁</b> velocity 1 before (m/s)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>v₂</b> velocity 2 before (m/s)</span><span><b>v₁&#x27;</b> velocity 1 after (m/s)</span><span><b>v₂&#x27;</b> velocity 2 after (m/s)</span></div><p class="tip">Any collision or explosion: total momentum before = after.
+Pick a + direction; moving the other way is negative. At rest = 0.
+Explosion or recoil from rest (gun, skaters push apart): v₁ = 0 and v₂ = 0.
+Moving together at first: type that same v in v₁ and v₂.
+2-D: use it once with x parts (e.g. 5*cos(30)), once with y parts (5*sin(30)).
+Speed = √(vₓ²+vᵧ²), angle = tan⁻¹(vᵧ/vₓ) (+180° if vₓ&lt;0).</p></div><div class="f"><div class="eq">m₁v₁ + m₂v₂ = (m₁ + m₂)v&#x27;</div><div class="vars"><span><b>m₁</b> mass 1 (kg)</span><span><b>v₁</b> velocity 1 before (m/s)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>v₂</b> velocity 2 before (m/s)</span><span><b>v&#x27;</b> combined velocity (m/s)</span></div><p class="tip">Objects stick together and move as one (perfectly inelastic).
+Target at rest: v₂ = 0.
+Ballistic pendulum (block swings up h): type v&#x27; = √(2*9.8*h), solve for v₁. Know the swing angle instead? h = L(1 − cos θ).
+Target at rest: KE lost = ½m₁v₁² × m₂/(m₁+m₂).
+Other KE: K = ½mv² (Work &amp; energy) before and after.
+2-D: see the tip on p = mv.</p></div><div class="f"><div class="eq">v₁&#x27; = ((m₁−m₂)v₁ + 2m₂v₂) / (m₁+m₂)</div><div class="vars"><span><b>m₁</b> mass 1 (kg)</span><span><b>v₁</b> velocity 1 before (m/s)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>v₂</b> velocity 2 before (m/s)</span><span><b>v₁&#x27;</b> velocity 1 after (m/s)</span></div><p class="tip">Elastic = they bounce apart and no KE is lost (1-D).
+Target at rest: v₂ = 0.
+For v₂&#x27;: swap the objects. Type object 2&#x27;s mass and velocity in the 1 boxes, object 1&#x27;s in the 2 boxes. The answer is v₂&#x27;.
+Equal masses: they just trade velocities.
+Check: v₁ − v₂ = v₂&#x27; − v₁&#x27;.</p></div><div class="f"><div class="eq">FΔt = m(v − v₀)</div><div class="vars"><span><b>F</b> average force (N)</span><span><b>Δt</b> contact time (s)</span><span><b>m</b> mass (kg)</span><span><b>v</b> final velocity (m/s)</span><span><b>v₀</b> starting velocity (m/s)</span></div><p class="tip">Average force that changes velocity in time Δt (bat, airbag, catching).
+Bounces back: v gets the opposite sign of v₀. Stops: v = 0.
+Angled hit: use only the part into the wall, e.g. v₀ = 20*cos(30), v = −20*cos(30).
+Dropped from h, up is +: v₀ = −√(2*9.8*h). Bounces up to h₂: v = √(2*9.8*h₂).
+F is the net force. Floor force on someone landing = F + mg.
+Hose or thrust: m = kg per second, Δt = 1.000 (not 1).</p></div><div class="f"><div class="eq">J = m(v − v₀)</div><div class="vars"><span><b>J</b> impulse (N·s)</span><span><b>m</b> mass (kg)</span><span><b>v</b> final velocity (m/s)</span><span><b>v₀</b> starting velocity (m/s)</span></div><p class="tip">Impulse = change in momentum (J = Δp).
+Signs matter! Ball hits a wall at 20 m/s and bounces back at 15 m/s: v₀ = 20, v = −15.
+Stops: v = 0. Starts at rest: v₀ = 0.
+Angled hit: use only the part into the wall, e.g. v₀ = 20*cos(30), v = −20*cos(30).
+The other object gets −J (same size, opposite way).</p></div><div class="f"><div class="eq">J = FΔt</div><div class="vars"><span><b>J</b> impulse (N·s)</span><span><b>F</b> average force (N)</span><span><b>Δt</b> contact time (s)</span></div><p class="tip">Impulse = average force × time it pushes.
+Force vs time graph: J = area under it. Triangle spike: type F as half the peak (e.g. 1500/2).
+J points the same way as the force.
+Know the mass and speeds instead? Use J = m(v − v₀) (one up in the list).</p></div><div class="f"><div class="eq">xcm = (m₁x₁+m₂x₂+m₃x₃) / (m₁+m₂+m₃)</div><div class="vars"><span><b>xcm</b> center of mass (m)</span><span><b>m₁</b> mass 1 (kg)</span><span><b>x₁</b> position 1 (m)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>x₂</b> position 2 (m)</span><span><b>m₃</b> mass 3 (0 if none) (kg)</span><span><b>x₃</b> position 3 (m)</span></div><p class="tip">2 objects: leave m₃ and x₃ at 0. 3 objects: type over them.
+Put x = 0 anywhere you like (often on one object).
+2-D: use it once for x, once for y.
+Velocity of center of mass: type velocities in the x boxes; answer = vcm (units m/s, not m).
+Uniform rod, ball or plate: its mass sits at its middle.
+Person walks L on a boat: m₁ = person, x₁ = L, m₂ = boat, x₂ = 0. Answer xcm = how far the boat slides back.</p></div><div class="f"><div class="eq">Δv = u ln(mᵢ / m) − gΔt</div><div class="vars"><span><b>Δv</b> change in speed (m/s)</span><span><b>u</b> exhaust speed (m/s)</span><span><b>mᵢ</b> starting mass (kg)</span><span><b>m</b> final mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>Δt</b> time (0 in space) (s)</span></div><p class="tip">Speed a rocket gains by burning fuel.
+In space: leave Δt = 0. Straight-up launch near Earth: Δt = burn time.
+mᵢ = full mass at the start. m = mass after the burn (mᵢ − fuel used).
+u = exhaust speed (how fast the gas leaves the rocket).
+Thrust force = u × kg of fuel burned per second.
+Acceleration = thrust / mass − 9.8 (no − 9.8 in space).</p></div></div><h2 id='rotation-and-torque'>Rotation and torque</h2><div class='list'><div class="f"><div class="eq">ω = ω₀ + αt</div><div class="vars"><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>α</b> angular accel. (rad/s²)</span><span><b>t</b> time (s)</span></div><p class="tip">From rest: ω₀ = 0. Comes to a stop: ω = 0.
+Slowing down: α is negative.
+Given rpm? Type rpm*2π/60 to get rad/s (300 rpm: 300*2π/60).
+Given rev/s (Hz)? Type f*2π. One turn every T s? Type 2π/T.
+No time given? Use ω² = ω₀² + 2αΔθ.
+Rope or rim accel. a given? Type a/r for α.</p></div><div class="f"><div class="eq">Δθ = ω₀t + ½αt²</div><div class="vars"><span><b>Δθ</b> angle turned (rad)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>t</b> time (s)</span><span><b>α</b> angular accel. (rad/s²)</span></div><p class="tip">Use when you know the time and α.
+From rest: ω₀ = 0. Slowing down: α is negative.
+Steady spin (no speed-up): α = 0, so Δθ = ω₀t.
+Given revolutions? Type rev*2π (12 rev: 12*2π).
+Given degrees? Type deg*π/180.
+Want revolutions? Divide the Δθ answer by 2π.
+Given rpm? Type rpm*2π/60.
+Rope unwound or distance s on the rim: Δθ = s/r.
+Two answers for t? Use the smaller positive one.</p></div><div class="f"><div class="eq">ω² = ω₀² + 2αΔθ</div><div class="vars"><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>α</b> angular accel. (rad/s²)</span><span><b>Δθ</b> angle turned (rad)</span></div><p class="tip">Use when no time is given.
+From rest: ω₀ = 0. Stops: ω = 0 (α comes out negative).
+Revolutions: type rev*2π for Δθ (12 rev: 12*2π).
+Degrees: type deg*π/180.
+Given rpm? Type rpm*2π/60.
+Two answers for ω (+ and −)? Same speed, two spin directions: use + unless it turned back.</p></div><div class="f"><div class="eq">Δθ = ½(ω₀ + ω)t</div><div class="vars"><span><b>Δθ</b> angle turned (rad)</span><span><b>ω₀</b> starting ang. vel. (rad/s)</span><span><b>ω</b> final ang. vel. (rad/s)</span><span><b>t</b> time (s)</span></div><p class="tip">Use when α is not given and not asked.
+From rest: ω₀ = 0. Stops: ω = 0.
+Want revolutions? Divide the Δθ answer by 2π (6.283).
+Given revolutions: type rev*2π. Given rpm: type rpm*2π/60.
+(ω₀ + ω)/2 is the average ω.</p></div><div class="f"><div class="eq">vₜ = rω</div><div class="vars"><span><b>vₜ</b> tangential speed (m/s)</span><span><b>r</b> radius (m)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Speed of a point on the rim, or of a belt, rope or rolling wheel.
+ω in rad/s: rpm → type rpm*2π/60 (900 rpm: 900*2π/60). One turn every T s → type 2π/T.
+Same formula, other uses:
+s = rθ: put θ (rad) in the ω box, answer is s
+aₜ = rα: put α in the ω box, answer is aₜ
+ac = rω²: put ω² in the ω box (or ac = vₜ²/r)
+Total accel.: a = √(aₜ² + ac²)</p></div><div class="f"><div class="eq">τ = rF sinθ</div><div class="vars"><span><b>τ</b> torque (N·m)</span><span><b>r</b> pivot to force pt (m)</span><span><b>F</b> force (N)</span><span><b>θ</b> angle between r, f (°)</span></div><p class="tip">r = distance from the pivot (axis) to where F pushes.
+θ = angle between r and F. Push at a right angle (like a door handle): θ = 90.
+Push straight toward the pivot: θ = 0, no torque.
+Type τ as a positive size here. Add the sign after: counterclockwise +, clockwise −.
+Several forces: add the torques (net torque Στ).</p></div><div class="f"><div class="eq">Στ = Iα</div><div class="vars"><span><b>Στ</b> net torque (N·m)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>α</b> angular accel. (rad/s²)</span></div><p class="tip">Net torque: add the torques, counterclockwise +, clockwise −.
+Force on the rim at a right angle: τ = FR, type F*R (20 N on 0.3 m: 20*0.3).
+Type I right in, e.g. solid disk ½MR²: 1/2*4*0.3²
+Rope on a wheel: α = a/R.
+Rod on an end pivot, held level: weight acts at the center, type Στ = M*9.8*L/2 and I = 1/3*M*L².
+Then use ω = ω₀ + αt etc. for speed and turns.
+Block hanging on the wheel? Use a = mgR²/(I + mR²).</p></div><div class="f"><div class="eq">I = cMR²</div><div class="vars"><span><b>I</b> moment of inertia (kg·m²)</span><span><b>c</b> shape (y= tips)</span><span><b>M</b> mass (kg)</span><span><b>R</b> radius (rod: l) (m)</span></div><p class="tip">c by shape (type a fraction so sig figs stay right):
+Point mass, hoop, ring, thin pipe: 1/1
+Solid disk, cylinder, pulley: 1/2
+Solid sphere (ball): 2/5
+Hollow sphere: 2/3
+Rod about its center: 1/12 (L in the R box)
+Rod about one end: 1/3 (L in the R box)
+Axis a distance d from the center: add Md².
+Many parts: add them, I = I₁ + I₂ + …
+Point masses: I = m₁r₁² + m₂r₂² + …
+Type a sum right in any I box: 2*0.5²+3*0.2²</p></div><div class="f"><div class="eq">a = mgR² / (I + mR²)</div><div class="vars"><span><b>a</b> accel. of mass (m/s²)</span><span><b>m</b> hanging mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>I</b> pulley/wheel i (kg·m²)</span><span><b>R</b> pulley radius (m)</span></div><p class="tip">A block hangs from a rope on a pulley or wheel and falls.
+Disk pulley: type I as 1/2*M*R² (2 kg, 0.1 m: 1/2*2*0.1²).
+Then: tension T = m(g − a), α = a/R.
+Fall h from rest: v = √(2ah), t = √(2h/a)
+Also pulls a block on a smooth table? Add its m₂R² to I.
+Two hanging blocks (m₁ heavier): type m₁−m₂ for m and I+2*m₂*R² for I.
+Tensions: T₁ = m₁(g − a), T₂ = m₂(g + a)</p></div><div class="f"><div class="eq">K = ½Iω²</div><div class="vars"><span><b>K</b> rotational ke (J)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>ω</b> angular speed (rad/s)</span></div><p class="tip">Spin energy. ω in rad/s.
+No friction: energy at start = energy at end.
+Only spinning, and its center drops h: K = Mgh, type M*g*h (2 kg, 0.5 m: 2*9.8*0.5).
+Rod swinging down from level on an end pivot: h = L/2.
+Work by a torque: W = τΔθ, and W = K − K₀ (from rest: K = W).
+Rolling (moving + spinning)? Use the Rolling topic.</p></div><div class="f"><div class="eq">P = τω</div><div class="vars"><span><b>P</b> power (W)</span><span><b>τ</b> torque (N·m)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Power of a motor or engine. ω in rad/s.
+Given rpm? Type rpm*2π/60 for ω (3000 rpm: 3000*2π/60).
+Work by a steady torque: W = τΔθ (Δθ in rad).
+Power is also P = W/t (work / time).
+1 hp = 746 W.</p></div></div><h2 id='rolling-and-angular-momentum'>Rolling and angular momentum</h2><div class='list'><div class="f"><div class="eq">v = ωR</div><div class="vars"><span><b>v</b> center speed (m/s)</span><span><b>ω</b> angular speed (rad/s)</span><span><b>R</b> radius (m)</span></div><p class="tip">Rolling without slipping: center speed v = ωR.
+The point touching the ground is not moving; the top moves at 2v.
+Same idea for a = αR and distance rolled = Rθ: use aₜ = rα and s = rθ in Rotation.
+rpm given: type ω as rpm*2π/60, e.g. 300*2π/60.
+Revolutions: θ = 2πN (Rotation).</p></div><div class="f"><div class="eq">v² = v₀² + 2gh / (1 + c)</div><div class="vars"><span><b>v</b> center speed (m/s)</span><span><b>v₀</b> starting speed (m/s)</span><span><b>g</b> gravity (m/s²)</span><span><b>h</b> height drop (up −) (m)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Speed after rolling down h, no slipping (v₀ = 0 from rest).
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: c = I/(mR²).
+Rolling up: h negative (−2 = up 2 m).
+Ramp length d: h = d*sin(θ); d unknown: a = g sinθ/(1 + c), then Motion topic.
+Slides, no friction: c = 0. Block on pulley: c = (I/R² + table block m)/hanging m (no table block: I/(mR²)).</p></div><div class="f"><div class="eq">a = g sinθ / (1 + c)</div><div class="vars"><span><b>a</b> acceleration (m/s²)</span><span><b>g</b> gravity (m/s²)</span><span><b>θ</b> incline angle (°)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Acceleration rolling down a ramp, no slipping. θ = ramp angle.
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: type I/(mR²) for c.
+Yo-yo falling: θ = 90, c = I/(mr²), r = axle radius.
+Block on a pulley: θ = 90, c = (I/R² + table block m)/hanging m. No table block: c = I/(mR²).
+Time or distance: use this a in Motion &amp; projectiles (rolling up: −a).</p></div><div class="f"><div class="eq">K = ½mv²(1 + c)</div><div class="vars"><span><b>K</b> total ke (J)</span><span><b>m</b> mass (kg)</span><span><b>v</b> center speed (m/s)</span><span><b>c</b> shape: i = cmr²</span></div><p class="tip">Total KE of a rolling object (moving + spinning).
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3. Other I: type I/(mR²) for c, e.g. 0.8/(5*0.3²).
+Moving part only (½mv²): c = 0.
+Spinning part only: K = ½Iω² in Rotation.
+Fraction that is spinning = c/(1 + c), e.g. solid sphere 0.4/1.4 = 0.29.</p></div><div class="f"><div class="eq">μₛ = c tanθ / (1 + c)</div><div class="vars"><span><b>μₛ</b> min static μ</span><span><b>c</b> shape: i = cmr²</span><span><b>θ</b> incline angle (°)</span></div><p class="tip">Smallest static friction coefficient that lets it roll down the ramp without slipping. Less than this: it slides.
+c = shape, typed as a fraction: hoop/pipe 1/1, solid disk/cylinder 1/2, solid sphere 2/5, hollow sphere 2/3.
+Steepest ramp it can roll on: leave θ empty.
+Friction force on it: f = μN (Forces) with the μₛ found here and N = m*9.8*cos(θ).</p></div><div class="f"><div class="eq">L = Iω</div><div class="vars"><span><b>L</b> angular momentum (kg·m²/s)</span><span><b>I</b> moment of inertia (kg·m²)</span><span><b>ω</b> angular velocity (rad/s)</span></div><p class="tip">Angular momentum of a spinning object.
+Type I right in the box: disk 0.5*m*R², hoop or point m*R², sphere 0.4*m*R², rod about its middle m*length²/12, e.g. 0.5*2*0.3².
+rpm given: type ω as rpm*2π/60, e.g. 300*2π/60.
+Period T given: type ω as 2π/T (Earth spin: 2π/86400).
+Counterclockwise +, clockwise −.
+Rolling: ω = v/R.
+Final ω after parts join: L = total starting L (person: m*v*r), I = final total I.</p></div><div class="f"><div class="eq">I₁ω₁ = I₂ω₂</div><div class="vars"><span><b>I₁</b> starting inertia (kg·m²)</span><span><b>ω₁</b> starting ω (rad/s)</span><span><b>I₂</b> final inertia (kg·m²)</span><span><b>ω₂</b> final ω (rad/s)</span></div><p class="tip">No outside torque, so L stays the same: skater pulls arms in, person jumps on or walks across a turning disk, two disks stick together.
+Add the parts: I₂ = 0.5*100*2²+40*2² (disk + person at the edge; person = mr²).
+Turning opposite ways: one ω is negative.
+rpm in gives rpm out, no change needed.
+Parts at different ω at the start, or a person running on: use L = Iω.
+KE lost: K = ½Iω² (Rotation).</p></div><div class="f"><div class="eq">L = mvr sinφ</div><div class="vars"><span><b>L</b> angular momentum (kg·m²/s)</span><span><b>m</b> mass (kg)</span><span><b>v</b> speed (m/s)</span><span><b>r</b> dist. from origin (m)</span><span><b>φ</b> angle from r to v (°)</span></div><p class="tip">Angular momentum of a small object about a point.
+φ = angle between r (point to object) and v.
+Moving in a circle, or r = closest distance to its straight path: φ = 90.
+Moving straight at the point: L = 0.
+Person running onto a merry-go-round edge: L = mvr (φ = 90).
+r and v as x,y parts: L = m(x·vᵧ − y·vₓ), + = counterclockwise.</p></div><div class="f"><div class="eq">Στ = ΔL / Δt</div><div class="vars"><span><b>Στ</b> net torque (N·m)</span><span><b>ΔL</b> change in l (kg·m²/s)</span><span><b>Δt</b> time (s)</span></div><p class="tip">Net torque = change in angular momentum / time.
+ΔL = L after − L before. One object: type I*(ω after − ω before), e.g. 4*(0−30).
+Slowing down: ΔL and Στ come out negative.
+Know α instead of time? Use Στ = Iα in Rotation.</p></div><div class="f"><div class="eq">ωₚ = rMg / (Iω)</div><div class="vars"><span><b>ωₚ</b> precession rate (rad/s)</span><span><b>r</b> pivot to cm dist (m)</span><span><b>M</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>I</b> i about spin axis (kg·m²)</span><span><b>ω</b> spin rate (rad/s)</span></div><p class="tip">Gyroscope or spinning top: how fast its axis swings around in a circle (rad/s).
+r = pivot to center of mass, M = mass.
+I and ω = its spin about its own axis, e.g. disk I = 0.5*M*R².
+rpm given: type ω as rpm*2π/60. rev/s given: rev/s*2π, e.g. 40*2π.
+Time for one swing around: T = 2π/ωₚ. T given: type ωₚ as 2π/T.</p></div></div><h2 id='equilibrium-and-elasticity'>Equilibrium and elasticity</h2><div class='list'><div class="f"><div class="eq">F₁r₁ sinθ = F₂r₂ + F₃r₃</div><div class="vars"><span><b>F₁</b> force 1, one way (N)</span><span><b>r₁</b> pivot to f₁ dist (m)</span><span><b>θ</b> angle f₁ to beam (°)</span><span><b>F₂</b> force 2, other way (N)</span><span><b>r₂</b> pivot to f₂ dist (m)</span><span><b>F₃</b> force 3, other way (N)</span><span><b>r₃</b> pivot to f₃ dist (m)</span></div><p class="tip">Torque one way = torque other way. Pivot at hinge or unknown force.
+F₁ turns it one way; F₂, F₃ the other.
+Weight: m*9.8 at beam middle.
+Unused: F₃ = r₃ = 0. More: add F×r in one box (30*1.5+20*2), r = 1/1.
+Slant: r = dist×sin(force-to-beam angle). Ladder 53° to floor: 2.5sin(37).
+− answer: force points the other way.
+About to tip: other support = 0.
+Balance point: F₁ = total mass, r₁ empty, F₂ = m₁x₁+m₂x₂, r₂ = 1/1.</p></div><div class="f"><div class="eq">F₁ + F₂ = F₃ + F₄</div><div class="vars"><span><b>F₁</b> up/right force 1 (N)</span><span><b>F₂</b> up/right force 2 (N)</span><span><b>F₃</b> down/left force 1 (N)</span><span><b>F₄</b> down/left force 2 (N)</span></div><p class="tip">Up forces = down forces. Sideways: right = left (right in F₁, F₂).
+2+ forces on a side: add them in one box (200+350). Unused box: 0. Weight: m*9.8.
+Hinge (cable T at θ), leave F₁ empty:
+Up: F₂ = Tsin(θ), F₃, F₄ = weights.
+Sideways: F₃ = Tcos(θ), F₂ = F₄ = 0.
+− answer: it points the other way.
+Hinge size and angle: vectors topic.
+Ladder: friction = wall force; then μ from f = μN (Forces topic).</p></div><div class="f"><div class="eq">Y = (F/A)(L₀/ΔL)</div><div class="vars"><span><b>Y</b> modulus y or s (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> cross-section area (m²)</span><span><b>L₀</b> original length (m)</span><span><b>ΔL</b> change in length (m)</span></div><p class="tip">Stretch or squeeze along the length (wire, rod, bone, column).
+Round: A = π(d/2)², e.g. π(0.004/2)².
+Hanging mass: F = m*9.8.
+mm: ×0.001. cm²: ×1E−4. GPa: ×1E9.
+Steel Y = 2.0E11, aluminum 7.0E10, copper 1.1E11, bone 1.6E10 (squeezed 9E9).
+Squeezed: ΔL = how much shorter (no minus).
+Shear (top slides sideways): S in Y, slide Δx in ΔL, height in L₀, A = face pushed. Steel S = 7.5E10, aluminum 2.5E10.</p></div><div class="f"><div class="eq">stress = F / A</div><div class="vars"><span><b>P</b> stress (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> cross-section area (m²)</span></div><p class="tip">Stress = force per area (Pa = N/m²).
+Round wire, rod or bone: A = π(d/2)².
+Hanging mass: F = m*9.8.
+Breaking: P = breaking stress (ultimate strength).
+Leave F empty: biggest force. Leave A empty: smallest area.
+Bulk stress is just the pressure.</p></div><div class="f"><div class="eq">strain = ΔL / L₀</div><div class="vars"><span><b>ε</b> strain</span><span><b>ΔL</b> change in length (m)</span><span><b>L₀</b> original length (m)</span></div><p class="tip">Strain = fraction it stretched (no unit). ×100 for %.
+ΔL = how much longer or shorter. Same units for ΔL and L₀.
+Shear strain: put Δx in ΔL (height in L₀).
+Know stress and modulus instead: use stress = modulus × strain.</p></div><div class="f"><div class="eq">stress = modulus × strain</div><div class="vars"><span><b>P</b> stress (Pa)</span><span><b>Y</b> modulus y, b or s (Pa)</span><span><b>ε</b> strain</span></div><p class="tip">Works for all three: Y (stretch/squeeze), S (shear), B (squeezed on all sides).
+Know 2 of stress, modulus, strain: get the 3rd.
+Type stress as F/A and strain as ΔL/L₀ if you like, e.g. 500/(π(0.002)²).
+Biggest strain before breaking: P = breaking stress.</p></div><div class="f"><div class="eq">B = −Δp V₀ / ΔV</div><div class="vars"><span><b>B</b> bulk modulus (Pa)</span><span><b>Δp</b> pressure increase (Pa)</span><span><b>V₀</b> original volume (m³)</span><span><b>ΔV</b> volume change (&lt;0) (m³)</span></div><p class="tip">Squeezed on all sides (pressure, deep water).
+Δp = pressure increase. ΔV comes out − (it shrinks); type ΔV with − if given.
+Depth h: Δp = 1000*9.8*h (sea water 1025). 1 atm = 1.013E5 Pa.
+Fraction ΔV/V₀: type V₀ = 1/1 (×100 for %).
+Water B = 2.2E9, steel 1.6E11.
+Compressibility = 1/B.</p></div></div><h2 id='gravity-and-orbits'>Gravity and orbits</h2><div class='list'><div class="f"><div class="eq">F = Gm₁m₂ / r²</div><div class="vars"><span><b>F</b> gravity force (N)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>m₁</b> mass 1 (kg)</span><span><b>m₂</b> mass 2 (kg)</span><span><b>r</b> center-to-center (m)</span></div><p class="tip">Pull between any two masses. r = center to center.
+Weight at a height h: m₁ = planet mass (Earth 5.97E24), m₂ = object, r = 6.37E6+h.
+Touching balls: r = radius 1 + radius 2.
+Two pulls on one mass: find each F, then add (same way) or subtract (opposite ways).
+2× the distance → 1/4 the force.
+Moon 7.35E22 kg, Sun 1.99E30 kg.
+Earth to Moon 3.84E8 m, Earth to Sun 1.50E11 m.</p></div><div class="f"><div class="eq">g = GM / r²</div><div class="vars"><span><b>g</b> gravity accel. (m/s²)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>r</b> center dist (r+h) (m)</span></div><p class="tip">Free-fall acceleration at distance r from a planet&#x27;s center.
+On the surface: r = planet radius (Earth 6.37E6).
+At a height h: r = 6.37E6+h.
+Find the height: solve r, then height = r − 6.37E6.
+Other planet: clear M, type its mass.
+Find a planet&#x27;s mass: clear M (CLEAR), type g and r, solve M.
+Where 2 pulls cancel (d apart): x = d/(1+√(m₂/m₁)) from m₁. Earth-Moon: 3.46E8 m.
+Weight = m×g.</p></div><div class="f"><div class="eq">v = √(GM / r)</div><div class="vars"><span><b>v</b> orbit speed (m/s)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>r</b> orbit radius (r+h) (m)</span></div><p class="tip">Speed of a satellite or moon in a circle orbit.
+r = planet center to satellite: 6.37E6+height.
+The satellite&#x27;s mass does not matter.
+Around the Sun: M = 1.99E30. Around the Moon: M = 7.35E22.
+Find a planet&#x27;s or star&#x27;s mass from a moon&#x27;s speed and r: clear M (CLEAR), solve M.
+Orbit KE = ½mv².</p></div><div class="f"><div class="eq">T² = 4π²r³ / GM</div><div class="vars"><span><b>T</b> orbit period (s)</span><span><b>r</b> radius/semi-major (m)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span></div><p class="tip">Time for one full orbit (Kepler&#x27;s 3rd law).
+T in seconds: hours×3600, days×86400, years×3.156E7.
+Stays over one spot: T = 24×3600. Height = r − 6.37E6.
+Oval orbit: r = (closest + farthest)/2. Farthest = 2r − closest.
+Sun: M = 1.99E30.
+Find a star&#x27;s or planet&#x27;s mass from its moon: clear M (CLEAR), solve M.
+Two planets, same star, no mass given: clear M, solve M from planet 1, use it for planet 2.</p></div><div class="f"><div class="eq">vₑ = √(2GM / R)</div><div class="vars"><span><b>vₑ</b> escape speed (m/s)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>R</b> start from center (m)</span></div><p class="tip">Slowest launch speed that never falls back (no air, no engine).
+From the surface: R = planet radius (Earth&#x27;s is filled in).
+From an orbit or height: R = 6.37E6+height.
+The object&#x27;s mass does not matter.
+Other body: Moon 7.35E22 kg, 1.74E6 m. Sun 1.99E30 kg, 6.96E8 m.
+Black hole size: type its M, vₑ = 3E8 (light), clear R (CLEAR), solve R.</p></div><div class="f"><div class="eq">U = −GMm / r</div><div class="vars"><span><b>U</b> potential energy (J)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>m</b> object mass (kg)</span><span><b>r</b> center dist (r+h) (m)</span></div><p class="tip">Gravity potential energy. Always negative; 0 when very far away.
+r = from the planet center: 6.37E6+height.
+Work to lift from r₁ to r₂: U₂ − U₁ (solve twice, subtract).
+Use this, not mgh, when the height is big (like 100 km+).
+Total energy of an orbit: use E = −GMm / 2r.
+Launch or falling speeds: use the ½v₁² − GM/r₁ formula.</p></div><div class="f"><div class="eq">E = −GMm / 2r</div><div class="vars"><span><b>E</b> total orbit energy (J)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span><span><b>m</b> object mass (kg)</span><span><b>r</b> orbit radius (r+h) (m)</span></div><p class="tip">Total energy (KE + U) of a circle orbit. Always negative.
+Orbit KE = the same number made positive. Orbit U = 2×E.
+Energy to move up to a higher orbit: E₂ − E₁ (solve twice, subtract).
+Energy to put it in orbit from the ground: E − U, with U from U = −GMm / r using r = 6.37E6.</p></div><div class="f"><div class="eq">½v₁² − GM/r₁ = ½v₂² − GM/r₂</div><div class="vars"><span><b>v₁</b> start speed (m/s)</span><span><b>r₁</b> start dist (r+h) (m)</span><span><b>v₂</b> end speed (m/s)</span><span><b>r₂</b> end dist (r+h) (m)</span><span><b>G</b> gravity constant (Nm²/kg²)</span><span><b>M</b> planet/star mass (kg)</span></div><p class="tip">Speed at one distance → speed at another (no air, no engine). Mass cancels.
+Every r is from the planet center: 6.37E6+height.
+Shot up, how high: v₂ = 0, solve r₂, then height = r₂ − 6.37E6.
+Falls from rest: v₁ = 0.
+Very far away: type 10^30 for that r.
+Escape speed: use vₑ = √(2GM / R).
+Comet&#x27;s closest and farthest points: use v₁r₁ = v₂r₂.</p></div><div class="f"><div class="eq">v₁r₁ = v₂r₂</div><div class="vars"><span><b>v₁</b> speed at closest (m/s)</span><span><b>r₁</b> closest distance (m)</span><span><b>v₂</b> speed at farthest (m/s)</span><span><b>r₂</b> farthest distance (m)</span></div><p class="tip">Kepler&#x27;s 2nd law: closer = faster.
+Only at an oval orbit&#x27;s closest point and farthest point.
+r = distance from the Sun&#x27;s (or planet&#x27;s) center.
+No masses needed.
+Units cancel: both r in AU, or both speeds in km/s, works too.</p></div></div><h2 id='fluids'>Fluids</h2><div class='list'><div class="f"><div class="eq">ρ = m / V</div><div class="vars"><span><b>ρ</b> density (kg/m³)</span><span><b>m</b> mass (kg)</span><span><b>V</b> volume (m³)</span></div><p class="tip">Water 1000 kg/m³, seawater 1025, ice 917, air 1.29, mercury 13600.
+g/cm³ × 1000 = kg/m³. 1 L = 0.001 m³. 1 cm³ = 1E−6 m³.
+Volume: box L*W*H, ball 4/3*π*r^3 (e.g. 4/3*π*0.1^3), cylinder π*r²*h.
+Know the weight W? Type W/9.8 for m.
+Specific gravity = ρ / 1000.</p></div><div class="f"><div class="eq">p = F / A</div><div class="vars"><span><b>p</b> pressure (Pa)</span><span><b>F</b> force (N)</span><span><b>A</b> area (m²)</span></div><p class="tip">Hydraulic lift: the pressure is the same on both pistons. Type F₁/A₁ in p, e.g. 300/(π*0.01²), the other piston&#x27;s area in A, solve F.
+Round area: π*r² (diameter d: π*d²/4).
+Window, lid or roof: type the pressure difference in p.
+Hatch at depth h (air inside): type ρgh in p, e.g. 1025*9.8*30.
+Dam or tank wall: type ρgh/2 in p (average), wall area in A.
+1 atm = 1.013E5 Pa = 760 mmHg = 14.7 psi. Weight: F = m*9.8.</p></div><div class="f"><div class="eq">p = p₀ + ρgh</div><div class="vars"><span><b>p</b> pressure at depth (Pa)</span><span><b>p₀</b> pressure on top (Pa)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>g</b> gravity (m/s²)</span><span><b>h</b> depth (m)</span></div><p class="tip">p₀ = pressure on top of the fluid (open to air: 1.013E5, filled in).
+Gauge pressure (tire, blood, &quot;above air&quot;): p₀ = 0.
+Two points in one fluid: p₀ = pressure at the higher point, p = at the lower, h = how much deeper.
+Seawater 1025, mercury 13600. mmHg × 133.3 = Pa.
+Barometer (vacuum on top): p₀ = 0, p = air pressure.
+U-tube, two liquids: type ρgh of one side in p (e.g. 1000*9.8*0.05), p₀ = 0, the other ρ, solve h.</p></div><div class="f"><div class="eq">Fb = ρVg</div><div class="vars"><span><b>Fb</b> buoyant force (N)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>V</b> submerged volume (m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">ρ = density of the FLUID (water 1000, seawater 1025, air 1.29), not the object.
+V = volume under the fluid (the whole object if it is fully under).
+Floating: Fb = its weight. Type m*9.8 in Fb, solve V (the part under).
+Weighed in air (W) and in water (Wₐ): type W−Wₐ in Fb (e.g. 25−21), solve V.
+Fb does not change with depth.</p></div><div class="f"><div class="eq">Wₐ = mg − ρVg</div><div class="vars"><span><b>Wₐ</b> apparent weight (N)</span><span><b>m</b> object mass (kg)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>V</b> submerged volume (m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Wₐ = string tension or scale reading while it is under the fluid.
+ρ = fluid density, V = object volume. Know its density? Type m/ρobj in V, e.g. 2/2700.
+Negative answer = it floats up; the string pulls down that hard.
+Floating on its own: Wₐ = 0, V = part under.
+Weighed in air (W) and in water (Wₐ): type W/9.8 for m, solve V, then ρ = m/V.
+Raft/balloon max load: Wₐ = 0, solve m, minus its own mass (+gas). Air 1.29.</p></div><div class="f"><div class="eq">f = ρobj / ρ</div><div class="vars"><span><b>f</b> fraction submerged</span><span><b>ρobj</b> object density (kg/m³)</span><span><b>ρ</b> fluid density (kg/m³)</span></div><p class="tip">Only for a FLOATING object.
+f = fraction under the fluid (0.8 = 80%). Part above = 1 − f.
+Floats with 2/3 under: type 2/3 for f.
+ρ = fluid density (water 1000, seawater 1025). Ice: ρobj = 917.
+Block: depth under = f × its height.</p></div><div class="f"><div class="eq">Q = Av</div><div class="vars"><span><b>Q</b> volume flow rate (m³/s)</span><span><b>A</b> pipe or hole area (m²)</span><span><b>v</b> flow speed (m/s)</span></div><p class="tip">Pipe gets narrower or wider (A₁v₁ = A₂v₂): Q is the same everywhere. Type A₁v₁ in Q, e.g. π*0.02²*1.5, the new A, solve v.
+Round pipe: A = π*r² (diameter d: π*d²/4).
+Several holes (shower head): A = n*π*r².
+Volume per time given: type V/t in Q, e.g. 0.1/72.
+1 L = 0.001 m³. 1 min = 60 s.</p></div><div class="f"><div class="eq">Q = V / t</div><div class="vars"><span><b>Q</b> volume flow rate (m³/s)</span><span><b>V</b> volume (m³)</span><span><b>t</b> time (s)</span></div><p class="tip">Time to fill a tank, or volume that flows in a time.
+Know the area and speed? Type A*v in Q, e.g. π*0.01²*3.
+1 L = 0.001 m³. 1 cm³ = 1E−6 m³. 1 min = 60 s.
+L/min to m³/s: × 0.001 / 60.</p></div><div class="f"><div class="eq">p₁+½ρv₁²+ρgy₁ = p₂+½ρv₂²+ρgy₂</div><div class="vars"><span><b>p₁</b> pressure at 1 (Pa)</span><span><b>v₁</b> speed at 1 (m/s)</span><span><b>y₁</b> height at 1 (m)</span><span><b>p₂</b> pressure at 2 (Pa)</span><span><b>v₂</b> speed at 2 (m/s)</span><span><b>y₂</b> height at 2 (m)</span><span><b>ρ</b> fluid density (kg/m³)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">1 and 2 = two spots in the same moving fluid. y = height (y = 0 at the lower spot).
+Open to air at both: type 0 for p₁ and p₂.
+Big tank surface or still fluid: v = 0.
+Hole in a tank: p₁ = p₂ = 0, v₁ = 0, y₁ = water height above hole, y₂ = 0, solve v₂ (= √(2gh)).
+Level pipe: y₁ = y₂ = 0. Know Q? Type Q/A in each v box, e.g. 0.002/(π*0.01²).</p></div></div><h2 id='oscillations'>Oscillations</h2><div class='list'><div class="f"><div class="eq">T = 2π√(m / k)</div><div class="vars"><span><b>T</b> period (s)</span><span><b>m</b> mass (kg)</span><span><b>k</b> spring constant (N/m)</span></div><p class="tip">Mass bouncing on a spring (sideways or hanging).
+Know f? Type 1/f as T. Know ω? Type 2π/ω as T.
+Need ω? For a spring ω = √(k/m): type it right in any ω box, e.g. √(200/0.5).
+Only told how far a hanging mass stretched it? Get k from mg = kΔy first.
+Mass added to change T? Solve m for each T and subtract.
+Twisting (torsion) pendulum: type I as m and the torsion constant as k.</p></div><div class="f"><div class="eq">T = 2π√(L / g)</div><div class="vars"><span><b>T</b> period (s)</span><span><b>L</b> pendulum length (m)</span><span><b>g</b> gravity (m/s²)</span></div><p class="tip">Ball on a string, small swings. The mass does not matter.
+Find g (other planet): press CLEAR on the g box (9.8) and leave it empty.
+Swinging rod, pivot at one end: type 2/3 of the rod length as L.
+Any swinging object: type I/(m*d) as L (d = pivot to center of mass).
+Hanging spring that stretched Δy: type Δy as L.
+Pendulum ω = √(g/L).</p></div><div class="f"><div class="eq">f = 1 / T</div><div class="vars"><span><b>f</b> frequency (Hz)</span><span><b>T</b> period (s)</span></div><p class="tip">Period T = seconds for 1 full back-and-forth.
+Frequency f = back-and-forths per second (Hz).
+Counted N cycles in t seconds? Type t/N as T, e.g. 20/10.
+End to middle takes T/4; end to end takes T/2. Type 4t or 2t as T.
+Know ω? Type ω/(2π) as f to get T.</p></div><div class="f"><div class="eq">ω = 2πf</div><div class="vars"><span><b>ω</b> angular frequency (rad/s)</span><span><b>f</b> frequency (Hz)</span></div><p class="tip">ω (rad/s) is what goes in x = A cos(ωt + φ) and the speed formulas. ω is not f.
+Know T? Type 1/T as f, e.g. 1/0.5.
+Spring: ω = √(k/m). Pendulum: ω = √(g/L). Type these right in the ω box, e.g. √(200/0.5), to get f.</p></div><div class="f"><div class="eq">mg = kΔy</div><div class="vars"><span><b>m</b> mass (kg)</span><span><b>g</b> gravity (m/s²)</span><span><b>k</b> spring constant (N/m)</span><span><b>Δy</b> stretch at rest (m)</span></div><p class="tip">Mass hanging still on a spring: Δy = how far it stretched from its natural length.
+Use it to find k, then the period.
+Pulled down more and let go? That extra pull is the amplitude A, not Δy.
+Spring force at a stretch x: F = kx (Work &amp; energy). Max force = kA.
+No mass given? Period = 2π√(Δy/g): use T = 2π√(L/g) with Δy as L.</p></div><div class="f"><div class="eq">x = A cos(ωt + φ)</div><div class="vars"><span><b>x</b> position (m)</span><span><b>A</b> amplitude (m)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>t</b> time (s)</span><span><b>φ</b> phase shift (rad)</span></div><p class="tip">Position at time t. Angles here are RADIANS (π = 180°).
+φ: pulled to +A and let go → 0. At the middle moving + → −π/2. At −A → π.
+Given x = A sin(ωt)? Use φ = −π/2.
+Given x = 0.25 cos(0.4πt)? A = 0.25, ω = 0.4π, φ = 0.
+t answer = first time it is at x; the 2nd answer is the next time.
+Starts at x₀ moving at v₀? Get A from v = ω√(A² − x²), then t = 0, leave φ empty: pick the φ with the opposite sign to v₀.</p></div><div class="f"><div class="eq">v = ω√(A² − x²)</div><div class="vars"><span><b>v</b> speed (m/s)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>A</b> amplitude (m)</span><span><b>x</b> position (m)</span></div><p class="tip">Speed at a spot x (x measured from the middle).
+Max speed (at the middle): type 0 as x. That is vₘₐₓ = Aω.
+Amplitude from a speed at a spot: leave A empty.
+ω: type √(k/m) for a spring, 2π/T, or 2πf.
+Speed is 0 at the ends (x = A).</p></div><div class="f"><div class="eq">a = −ω²x</div><div class="vars"><span><b>a</b> acceleration (m/s²)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>x</b> position (m)</span></div><p class="tip">Acceleration at a spot x. It always points back to the middle (opposite sign to x).
+Max acceleration aₘₐₓ = Aω²: type A as x and drop the minus sign.
+Know aₘₐₓ and A? Type them as a and x, leave ω empty.
+At a time t: find x first with x = A cos(ωt + φ).
+Spring: type √(k/m) as ω.</p></div><div class="f"><div class="eq">E = ½kA²</div><div class="vars"><span><b>E</b> total energy (J)</span><span><b>k</b> spring constant (N/m)</span><span><b>A</b> amplitude (m)</span></div><p class="tip">Total energy. It stays the same the whole time.
+Spring energy at a spot x: type x as A. Then kinetic energy = E − that.
+Kinetic energy ½mv²: type m in the k box and v in the A box.
+Max speed from E: type m as k and leave A empty (answer is vₘₐₓ).
+No k? Type m*ω² as k.</p></div><div class="f"><div class="eq">v = −vₘₐₓ sin(ωt + φ)</div><div class="vars"><span><b>v</b> velocity (m/s)</span><span><b>vₘₐₓ</b> max speed (m/s)</span><span><b>ω</b> angular frequency (rad/s)</span><span><b>t</b> time (s)</span><span><b>φ</b> phase shift (rad)</span></div><p class="tip">Velocity at time t. + or − shows the direction.
+RADIANS, and the same φ as in x = A cos(ωt + φ).
+vₘₐₓ = Aω: type it as A*ω, e.g. 0.1*20.
+t answer = first time it has that velocity.
+ω: type 2π/T, 2πf or √(k/m).</p></div><div class="f"><div class="eq">A = A₀e^(−bt / 2m)</div><div class="vars"><span><b>A</b> amplitude (m)</span><span><b>A₀</b> start amplitude (m)</span><span><b>b</b> damping constant (kg/s)</span><span><b>t</b> time (s)</span><span><b>m</b> mass (kg)</span></div><p class="tip">Damped (friction slows it): the amplitude shrinks over time.
+Only told a fraction? Half the amplitude: type 1/1 as A₀ and 1/2 as A.
+Energy goes with A²: half the energy → type 1/1 as A₀ and √(1/2) as A.
+Critical damping (no bouncing): b = 2√(mk).
+Damped ω = √(k/m − (b/2m)²): type it in an ω box.</p></div></div>
+<section class="cta"><h2>Solve these on your TI-84 Plus CE</h2>
+<p>PHYSPRO has every formula on this page. Type what the problem gives you and it solves for all the missing values, showing the plug-in line with units and the sig figs. Free.</p>
+<a class="btn" href="../">Get PHYSPRO free</a>
+<p style="font-size:14px;color:var(--muted)">Did it help? Tip $1 on Venmo: @FormulaFoundry</p></section>
+</main></body></html>
