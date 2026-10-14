@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PHYSPRO by Formula Foundry</title>
+<meta name="description" content="PHYSPRO: a physics formula solver app for the TI-84 Plus CE. Type what the problem gives you; it solves every missing value and shows the formula, plug-in and answer with sig figs. 12 Physics I topics, 97 formulas. Free.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one column; real calculator screenshots in a horizontal strip are the hero. */
+:root{
+  --bg:#eef1f6; --ink:#141a26; --muted:#5a6375; --line:#d3d9e4; --card:#ffffff;
+  --shell:#1d2433; --accent:#2a5bd7; --go:#1f7a45;
+  --display:"Archivo",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{--bg:#0f131b; --ink:#e7ebf3; --muted:#9aa4b8; --line:#283043; --card:#171d29; --shell:#05070b; --accent:#6c9cff; --go:#4fc07f; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body);padding-inline:16px;padding-block:36px 64px}
+main{max-width:760px;margin:0 auto;display:grid;gap:44px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6.5vw,46px);font-weight:800;line-height:1.06;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0}
+.eyebrow{font:700 12px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.lede{color:var(--muted);margin-top:12px;max-width:62ch}
+.strip{display:flex;gap:12px;overflow-x:auto;padding:14px;background:var(--shell);border-radius:16px;scroll-snap-type:x mandatory}
+.strip figure{margin:0;flex:0 0 auto;scroll-snap-align:start;display:grid;gap:6px}
+.strip img{width:330px;max-width:78vw;height:auto;border-radius:4px;display:block;image-rendering:auto}
+.strip figcaption{color:#aab3c5;font-size:13px}
+section{display:grid;gap:14px}
+ul.topics{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px 20px}
+ul.topics li{border-top:1px solid var(--line);padding-top:6px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.how div{min-width:0}
+.how b{font-family:var(--display);color:var(--accent)}
+.get{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.box.main{border-color:var(--accent)}
+.tag{font:700 11px var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.box ol{margin:0;padding-left:20px;display:grid;gap:6px}
+.btn{font:700 15px var(--display);background:var(--accent);color:#fff;border:0;border-radius:8px;padding:11px 16px;text-decoration:none;display:inline-block;text-align:center;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:12px}
+.price{font:800 36px var(--display);color:var(--go)}
+.price small{font:400 16px var(--body);color:var(--muted)}
+.handle{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.handle code{font:600 18px ui-monospace,Consolas,monospace;background:var(--bg);border:1px solid var(--line);padding:6px 10px;border-radius:8px}
+.fine{font-size:14px;color:var(--muted)}
+a{color:var(--accent)}
+</style></head><body>
+<main>
+  <header>
+    <div class="eyebrow">Formula Foundry · Free app · TI-84 Plus CE · Physics I</div>
+    <h1>Type what the problem gives you. PHYSPRO solves for everything else.</h1>
+    <p class="lede">PHYSPRO is a physics formula solver for the TI-84 Plus CE. Fill in the values the problem gives you and leave the rest blank. It chains the formulas, finds every missing value, and shows each step: the formula, the plug-in line with units, and the answer rounded to the right sig figs.</p>
+  </header>
+
+  <div class="strip" aria-label="PHYSPRO screenshots">
+    <figure><img src="img/topics.png" width="330" height="250" alt="PHYSPRO topic list showing the real formulas under each topic"><figcaption>12 topics, each listing its real formulas</figcaption></figure>
+    <figure><img src="img/fillin.png" width="330" height="250" alt="Fill-in page for a projectile problem with units next to each box"><figcaption>Fill in what you know, with units</figcaption></figure>
+    <figure><img src="img/answers.png" width="330" height="250" alt="Found 8 answers, each with exact value and 3 sig figs"><figcaption>It finds every missing value</figcaption></figure>
+    <figure><img src="img/work.png" width="330" height="250" alt="Step-by-step work: formula, plug-in with units, and answer"><figcaption>Step-by-step work for each answer</figcaption></figure>
+    <figure><img src="img/energy.png" width="330" height="250" alt="Solving U = mgh for h with the plug-in line and sig figs"><figcaption>Or solve one formula for any variable</figcaption></figure>
+  </div>
+
+  <section>
+    <h2>12 topics, 97 formulas</h2>
+    <ul class="topics">
+      <li>Measurement and vectors</li><li>Motion and projectiles</li><li>Motion with calculus</li>
+      <li>Forces and circular motion</li><li>Work and energy</li><li>Momentum and collisions</li>
+      <li>Rotation and torque</li><li>Rolling and angular momentum</li><li>Equilibrium and elasticity</li>
+      <li>Gravity and orbits</li><li>Fluids</li><li>Oscillations</li>
+    </ul>
+    <p class="fine">Every formula is solved for every variable and checked by a test suite (1,640 formula checks and 196 fill-in page tests, all passing).</p>
+  </section>
+
+  <section>
+    <h2>Get it</h2>
+    <div class="get">
+      <div class="box main">
+        <div class="tag">Recommended</div>
+        <h3>PHYSPRO (the app shown above)</h3>
+        <a class="btn" href="PHYSPRO.zip" download>Download PHYSPRO (5 files)</a>
+        <ol>
+          <li>Install <a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank" rel="noopener">TI Connect CE</a> (free).</li>
+          <li>Send all 5 files to the calculator's <b>Archive</b>.</li>
+          <li>On OS 5.5 or newer, C apps need <a href="https://yvantt.github.io/arTIfiCE/" target="_blank" rel="noopener">arTIfiCE</a> to launch. Follow its guide, then start PHYSPRO.</li>
+        </ol>
+      </div>
+      <div class="box">
+        <div class="tag">No jailbreak</div>
+        <h3>PHYSICS Classic (plain TI-BASIC)</h3>
+        <a class="btn ghost" href="TI84-Physics-Solver.zip" download>Download Classic (7 files)</a>
+        <ol>
+          <li>Menus organized by what you're solving for: motion, vectors, projectiles, forces, circular motion.</li>
+          <li>Send all 7 files, then press <b>prgm</b>, pick <b>PHYSICS</b>, and press <b>enter</b> twice.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="tip" aria-labelledby="tiph">
+    <h2 id="tiph">Did it help?</h2>
+    <div class="price">$1 <small>tip on Venmo if it saved you time on homework or a test</small></div>
+    <div class="handle">
+      <code id="h">@FormulaFoundry</code>
+      <button class="btn ghost" id="copy">Copy Venmo handle</button>
+      <a class="btn" href="https://venmo.com/u/FormulaFoundry" target="_blank" rel="noopener">Tip on Venmo</a>
+    </div>
+    <p>Need help installing it? Text Formula Foundry at <b>318-235-8861</b>.</p>
+    <p class="fine">Tips pay for new topics. Source and files: <a href="https://github.com/peytonalexander2021-source/ti84-physics-solver">GitHub</a>. Check your instructor's calculator policy before using any program on a test, and sanity-check the answers.</p>
+  </section>
+</main>
+<script>
+document.getElementById('copy').addEventListener('click',e=>{const b=e.currentTarget;
+ (navigator.clipboard?navigator.clipboard.writeText('@FormulaFoundry'):Promise.reject()).then(()=>{b.textContent='Copied'},()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('h'));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Ctrl+C'})});
+</script>
+</body></html>
